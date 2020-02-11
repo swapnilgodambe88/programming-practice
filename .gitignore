@@ -1,0 +1,20 @@
+# Maven project files
+.classpath
+.project
+.settings
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+.idea
+
+target
+.fbprefs
+*.sh
+/bin/
+*.bak
+
+.checkstyle
+.pwd
+.pwdruleset.xml
