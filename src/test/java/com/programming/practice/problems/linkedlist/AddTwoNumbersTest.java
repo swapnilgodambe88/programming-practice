@@ -5,9 +5,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link AddTwoNumbers}
+ * White box tests for {@link AddTwoNumbers}.
  *
- * @author swapnil
+ * @author Swapnil Godambe. Copyright 2020.
  */
 public final class AddTwoNumbersTest {
 

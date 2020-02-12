@@ -3,7 +3,9 @@ package com.programming.practice.algorithms;
 /**
  * Class to perform bubble sort. Complexity: O (n ^ 2)
  *
- * @author swapnil
+ * <p>Copyright 2020.
+ *
+ * @author Swapnil Godambe
  */
 final class BubbleSort {
 

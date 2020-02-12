@@ -3,7 +3,9 @@ package com.programming.practice.algorithms;
 /**
  * Class to perform Quick Sort. Complexity: O (n log n)
  *
- * @author swapnil
+ * <p>Copyright 2020.
+ *
+ * @author Swapnil Godambe
  */
 final class QuickSort {
 

@@ -5,17 +5,23 @@ import java.util.Objects;
 /**
  * Singly linked-list representation.
  *
- * @author swapnil
+ * @author Swapnil Godambe. Copyright 2020.
  */
 public final class ListNode {
   public int val;
   public ListNode next;
 
+  /**
+   * Constructor for {@Link ListNode}.
+   *
+   * @param val The value for the node.
+   */
   public ListNode(int val) {
     this.val = val;
     this.next = null;
   }
 
+  /** {@inheritDoc} */
   @Override
   public String toString() {
     ListNode iterator = this;
@@ -28,6 +34,7 @@ public final class ListNode {
     return printValue;
   }
 
+  /** {@inheritDoc} */
   @Override
   public boolean equals(final Object object) {
     if (this == object) {

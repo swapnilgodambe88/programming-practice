@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * White box test for {@link BubbleSort}.
  *
- * @author swapnil
+ * @author Swapnil Godambe. Copyright 2020.
  */
 public class BubbleSortTest {
 
