@@ -21,7 +21,7 @@ import java.util.List;
  * @see <a href = "https://leetcode.com/problems/reverse-integer/">Reverse Integer</a>
  * @author Swapnil Godambe. Copyright 2020.
  */
-final class ReverseInteger {
+public final class ReverseInteger {
 
   public int reverse(final int inputNumber) {
 
@@ -48,7 +48,7 @@ final class ReverseInteger {
 
       final int temp = (int) (Math.pow(10, powerIndex--) * digit);
 
-      // This check is to ensure that the reverseNumber is not going being the max bounds of 32 bit
+      // This check is to ensure that the reverseNumber is not going out of bounds for a 32 bit
       // integer
       if (reverseNumber > Integer.MAX_VALUE - temp) {
         return 0;

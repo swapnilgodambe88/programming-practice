@@ -71,7 +71,6 @@ final class LongestPalandromicSubstring {
     for (int end = 0; end < inputString.length(); end++) {
       for (int start = 0; start <= end; start++) {
 
-        // String under consideration is from j to i
         final int lengthOfCurrentString = end - start + 1;
 
         // #1 Single character is always a palindrome
