@@ -10,10 +10,10 @@ import org.junit.Test;
  */
 public final class LongestPalandromicSubstringTest {
 
+  private final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
+
   @Test
   public void testEmptyString() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString = "";
     final String expectedString = "";
 
@@ -23,8 +23,6 @@ public final class LongestPalandromicSubstringTest {
 
   @Test
   public void testSingleCharacterSolution() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString = "abcdefg";
     final String expectedString = "a";
 
@@ -34,8 +32,6 @@ public final class LongestPalandromicSubstringTest {
 
   @Test
   public void testInputStringIsPalindrome() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString = "abcdefggfedcba";
     final String expectedString = inputString;
 
@@ -45,8 +41,6 @@ public final class LongestPalandromicSubstringTest {
 
   @Test
   public void testRandomString1() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString = "babad";
     final String expectedString = "bab";
 
@@ -56,8 +50,6 @@ public final class LongestPalandromicSubstringTest {
 
   @Test
   public void testRandomString2() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString = "cbbd";
     final String expectedString = "bb";
 
@@ -67,8 +59,6 @@ public final class LongestPalandromicSubstringTest {
 
   @Test
   public void testLongString() {
-    final LongestPalandromicSubstring obj = new LongestPalandromicSubstring();
-
     final String inputString =
         "cyyoacmjwjubfkzrrbvquqkwhsxvmytmjvbborrtoiyotobzjmohpadfrvmxuagbdczsjuekjrmcwyaovpiogspbslcppxojgbfxhtsxmecgqjfuvahzpgprscjwwutwoiksegfreortttdotgxbfkisyakejihfjnrdngkwjxeituomuhmeiesctywhryqtjimwjadhhymydlsmcpycfdzrjhstxddvoqprrjufvihjcsoseltpyuaywgiocfodtylluuikkqkbrdxgjhrqiselmwnpdzdmpsvbfimnoulayqgdiavdgeiilayrafxlgxxtoqskmtixhbyjikfmsmxwribfzeffccczwdwukubopsoxliagenzwkbiveiajfirzvngverrbcwqmryvckvhpiioccmaqoxgmbwenyeyhzhliusupmrgmrcvwmdnniipvztmtklihobbekkgeopgwipihadswbqhzyxqsdgekazdtnamwzbitwfwezhhqznipalmomanbyezapgpxtjhudlcsfqondoiojkqadacnhcgwkhaxmttfebqelkjfigglxjfqegxpcawhpihrxydprdgavxjygfhgpcylpvsfcizkfbqzdnmxdgsjcekvrhesykldgptbeasktkasyuevtxrcrxmiylrlclocldmiwhuizhuaiophykxskufgjbmcmzpogpmyerzovzhqusxzrjcwgsdpcienkizutedcwrmowwolekockvyukyvmeidhjvbkoortjbemevrsquwnjoaikhbkycvvcscyamffbjyvkqkyeavtlkxyrrnsmqohyyqxzgtjdavgwpsgpjhqzttukynonbnnkuqfxgaatpilrrxhcqhfyyextrvqzktcrtrsbimuokxqtsbfkrgoiznhiysfhzspkpvrhtewthpbafmzgchqpgfsuiddjkhnwchpleibavgmuivfiorpteflholmnxdwewj";
     final String expectedString = "xrcrx";

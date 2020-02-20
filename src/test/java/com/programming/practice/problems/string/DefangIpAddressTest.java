@@ -10,11 +10,11 @@ import org.junit.Test;
  */
 public final class DefangIpAddressTest {
 
+  private final DefangIpAddress obj = new DefangIpAddress();
+
   @Test
   public void testSingleDigitIPAddress() {
     final String address = "1.1.1.1";
-
-    final DefangIpAddress obj = new DefangIpAddress();
 
     Assert.assertEquals("1[.]1[.]1[.]1", obj.defangIPaddr(address));
   }
@@ -22,8 +22,6 @@ public final class DefangIpAddressTest {
   @Test
   public void testMixedDigitIPAddress() {
     final String address = "255.100.50.0";
-
-    final DefangIpAddress obj = new DefangIpAddress();
 
     Assert.assertEquals("255[.]100[.]50[.]0", obj.defangIPaddr(address));
   }

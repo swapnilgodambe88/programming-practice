@@ -10,38 +10,30 @@ import org.junit.Test;
  */
 public final class RomanToIntegerTest {
 
+  private final RomanToInteger obj = new RomanToInteger();
+
   @Test
   public void testRoman3() {
-    final RomanToInteger obj = new RomanToInteger();
-
     Assert.assertEquals(3, obj.romanToInt("III"));
   }
 
   @Test
   public void testRoman4() {
-    final RomanToInteger obj = new RomanToInteger();
-
     Assert.assertEquals(4, obj.romanToInt("IV"));
   }
 
   @Test
   public void testRoman9() {
-    final RomanToInteger obj = new RomanToInteger();
-
     Assert.assertEquals(9, obj.romanToInt("IX"));
   }
 
   @Test
   public void testRoman58() {
-    final RomanToInteger obj = new RomanToInteger();
-
     Assert.assertEquals(58, obj.romanToInt("LVIII"));
   }
 
   @Test
   public void testRoman1994() {
-    final RomanToInteger obj = new RomanToInteger();
-
     Assert.assertEquals(1994, obj.romanToInt("MCMXCIV"));
   }
 }

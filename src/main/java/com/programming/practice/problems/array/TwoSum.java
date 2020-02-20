@@ -21,23 +21,24 @@ import java.util.TreeMap;
  */
 class TwoSum {
 
+  /**
+   * @param inputArray The input Array to find the two integer who's sum equals target.
+   * @param target The target.
+   * @return An array containing the indices of the two integers who's sum equals target.
+   */
   public int[] twoSum(final int[] inputArray, final int target) {
 
     // A map of indices keyed by values of the array.
     // NOTE: HashMap and LinkedHashMap allow null values, But TreeMap doesn't
     final Map<Integer, Integer> indexMapKeyedByValue = new TreeMap<>();
 
-    // Populate the map
-    for (int i = 0; i < inputArray.length; i++) {
-      indexMapKeyedByValue.put(inputArray[i], i);
-    }
-
     for (int i = 0; i < inputArray.length; i++) {
       final int possibleSecondElement = target - inputArray[i];
 
-      if (indexMapKeyedByValue.containsKey(possibleSecondElement)
-          && i != indexMapKeyedByValue.get(possibleSecondElement)) {
-        return new int[] {i, indexMapKeyedByValue.get(possibleSecondElement)};
+      if (!indexMapKeyedByValue.containsKey(possibleSecondElement)) {
+        indexMapKeyedByValue.put(inputArray[i], i);
+      } else {
+        return new int[] {indexMapKeyedByValue.get(possibleSecondElement), i};
       }
     }
 

@@ -13,16 +13,17 @@ import org.junit.rules.ExpectedException;
  */
 public class TwoSumTest {
 
-  @Rule public ExpectedException exceptionRule = ExpectedException.none();
+  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
+
+  private final TwoSum obj = new TwoSum();
 
   private static void assertArraysAreEqual(final int[] array1, final int[] array2) {
-    Assert.assertTrue(Arrays.equals(array1, array2));
+    Assert.assertTrue("Arrays are not equal", Arrays.equals(array1, array2));
   }
 
   @Test
   public void testNoSolutionExists() {
     final int[] inputArray = {1, 2, 3, 4, 5, 6};
-    final TwoSum obj = new TwoSum();
 
     exceptionRule.expectMessage("No solution exists for the given inputArray");
     exceptionRule.expect(IllegalArgumentException.class);
@@ -43,19 +44,19 @@ public class TwoSumTest {
 
   @Test
   public void testPositiveElements() {
-    final int[] inputArray = {1, 2, 3, 4, 5, 6};
+    final int[] inputArray = {1, 12, 3, 4, 5, 6};
     final TwoSum obj = new TwoSum();
 
-    final int[] expectedSolutionArray = {2, 5};
+    final int[] expectedSolutionArray = {3, 4};
     assertArraysAreEqual(expectedSolutionArray, obj.twoSum(inputArray, 9));
   }
 
   @Test
   public void testNegativeElements() {
-    final int[] inputArray = {-1, -2, -3, -4, -5, -9};
+    final int[] inputArray = {-1, -12, -3, -4, -5, -9};
     final TwoSum obj = new TwoSum();
 
-    final int[] expectedSolutionArray = {1, 4};
+    final int[] expectedSolutionArray = {2, 3};
     assertArraysAreEqual(expectedSolutionArray, obj.twoSum(inputArray, -7));
   }
 

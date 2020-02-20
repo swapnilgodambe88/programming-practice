@@ -11,45 +11,35 @@ import org.junit.Test;
  */
 public final class IntegerToRomanTest {
 
+  private final IntegerToRoman obj = new IntegerToRoman();
+
   @Test
   public void testRoman3() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("III", obj.intToRoman(3));
   }
 
   @Test
   public void testRoman4() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("IV", obj.intToRoman(4));
   }
 
   @Test
   public void testRoman9() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("IX", obj.intToRoman(9));
   }
 
   @Test
   public void testRoman58() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("LVIII", obj.intToRoman(58));
   }
 
   @Test
   public void testRoman1994() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("MCMXCIV", obj.intToRoman(1994));
   }
 
   @Test
   public void testRoman20() {
-    final IntegerToRoman obj = new IntegerToRoman();
-
     Assert.assertEquals("XX", obj.intToRoman(20));
   }
 }

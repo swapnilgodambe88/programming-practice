@@ -10,38 +10,30 @@ import org.junit.Test;
  */
 public final class StepsToReduceNumberToZeroTest {
 
+  private final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
+
   @Test
   public void testZero() {
-    final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
-
     Assert.assertEquals(0, obj.numberOfSteps(0));
   }
 
   @Test
   public void testNegativeNumber() {
-    final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
-
     Assert.assertEquals(0, obj.numberOfSteps(-1));
   }
 
   @Test
   public void testPositiveNumber1() {
-    final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
-
     Assert.assertEquals(6, obj.numberOfSteps(14));
   }
 
   @Test
   public void testPositiveNumber2() {
-    final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
-
     Assert.assertEquals(4, obj.numberOfSteps(8));
   }
 
   @Test
   public void testPositiveNumber3() {
-    final StepsToReduceNumberToZero obj = new StepsToReduceNumberToZero();
-
     Assert.assertEquals(12, obj.numberOfSteps(123));
   }
 }

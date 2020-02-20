@@ -11,24 +11,20 @@ import org.junit.Test;
  */
 public final class ContainerWithMostWaterTest {
 
+  private final ContainerWithMostWater obj = new ContainerWithMostWater();
+
   @Test
   public void testTwoHeights() {
-    final ContainerWithMostWater obj = new ContainerWithMostWater();
-
     Assert.assertEquals(8, obj.maxArea(new int[] {9, 8}));
   }
 
   @Test
   public void testRandom1() {
-    final ContainerWithMostWater obj = new ContainerWithMostWater();
-
     Assert.assertEquals(49, obj.maxArea(new int[] {1, 8, 6, 2, 5, 4, 8, 3, 7}));
   }
 
   @Test
   public void testAllZeroHeight() {
-    final ContainerWithMostWater obj = new ContainerWithMostWater();
-
     Assert.assertEquals(0, obj.maxArea(new int[] {0, 0, 0, 0}));
   }
 }

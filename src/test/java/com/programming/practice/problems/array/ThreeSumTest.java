@@ -12,6 +12,8 @@ import org.junit.Test;
  */
 public final class ThreeSumTest {
 
+  private final ThreeSum obj = new ThreeSum();
+
   @Test
   public void testTwoTripletSolutionExists() {
     final int[] inputArray = new int[] {-1, 0, 1, 2, -1, -4};
@@ -20,7 +22,6 @@ public final class ThreeSumTest {
     expectedTriplets.add(Arrays.asList(-1, -1, 2));
     expectedTriplets.add(Arrays.asList(-1, 0, 1));
 
-    final ThreeSum obj = new ThreeSum();
     Assert.assertEquals(expectedTriplets, obj.threeSum(inputArray));
   }
 
@@ -31,7 +32,6 @@ public final class ThreeSumTest {
     final List<List<Integer>> expectedTriplets = new ArrayList<>();
     expectedTriplets.add(Arrays.asList(0, 0, 0));
 
-    final ThreeSum obj = new ThreeSum();
     Assert.assertEquals(expectedTriplets, obj.threeSum(inputArray));
   }
 
@@ -44,7 +44,6 @@ public final class ThreeSumTest {
     expectedTriplets.add(Arrays.asList(-2, 0, 2));
     expectedTriplets.add(Arrays.asList(-1, 0, 1));
 
-    final ThreeSum obj = new ThreeSum();
     Assert.assertEquals(expectedTriplets, obj.threeSum(inputArray));
   }
 }
