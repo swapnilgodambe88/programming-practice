@@ -1,4 +1,4 @@
-package com.programming.practice.problems.recurssion;
+package com.programming.practice.problems.recursion;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link LetterCombinationOfPhoneNumber}.
+ * White box tests for {@link
+ * com.programming.practice.problems.recursion.LetterCombinationOfPhoneNumber}.
  *
  * @author Swapnil Godambe. Copyright 2020.
  */

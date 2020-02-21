@@ -1,4 +1,4 @@
-package com.programming.practice.problems.recurssion;
+package com.programming.practice.problems.recursion;
 
 import java.util.ArrayList;
 import java.util.HashMap;
