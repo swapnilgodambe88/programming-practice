@@ -23,21 +23,24 @@ final class SwapNodesInPairs {
    * @return The head of the adjusted linked list.
    */
   public ListNode swapPairs(final ListNode head) {
-    ListNode iter1 = new ListNode(-1);
-    iter1.next = head;
+    ListNode iter = new ListNode(-1);
+    iter.next = head;
 
-    while (iter1 != null && iter1.next != null & iter1.next.next != null) {
+    // Creating a copy of the iter node since we will increment it in while loop
+    final ListNode iterCopy = iter;
 
-      ListNode currNode = iter1.next;
-      ListNode tempNode = currNode.next.next;
+    while (iter != null && iter.next != null && iter.next.next != null) {
 
-      iter1.next = currNode.next;
-      iter1.next.next = currNode;
-      currNode.next = tempNode;
+      ListNode oddNode = iter.next;
+      ListNode evenNode = oddNode.next;
 
-      iter1 = iter1.next.next;
+      iter.next = evenNode;
+      oddNode.next = evenNode.next;
+      evenNode.next = oddNode;
+
+      iter = iter.next.next;
     }
 
-    return iter1.next;
+    return iterCopy.next;
   }
 }
