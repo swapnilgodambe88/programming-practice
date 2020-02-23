@@ -10,7 +10,7 @@ import org.junit.Test;
  *
  * @author Swapnil Godambe. Copyright 2020.
  */
-public class QuickSortTest {
+public final class QuickSortTest {
 
   /** Verifies ascending Bubble sort for empty array. */
   @Test
