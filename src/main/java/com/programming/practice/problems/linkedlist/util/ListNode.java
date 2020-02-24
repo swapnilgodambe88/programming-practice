@@ -12,7 +12,7 @@ public final class ListNode {
   public ListNode next;
 
   /**
-   * Constructor for {@Link ListNode}.
+   * Constructor for {@link ListNode}.
    *
    * @param val The value for the node.
    */
@@ -50,11 +50,17 @@ public final class ListNode {
       return false;
     }
 
-    if (!Objects.equals(next, other.next)) {
+    if (!Objects.equals(this.next, other.next)) {
       return false;
     }
 
     return true;
+  }
+
+  /** {@inheritDoc} */
+  @Override
+  public int hashCode() {
+    return Objects.hash(val, next);
   }
 
   /**
