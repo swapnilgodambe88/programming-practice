@@ -7,7 +7,7 @@ package com.programming.practice.algorithms;
  *
  * @author Swapnil Godambe
  */
-final class BubbleSort {
+public final class BubbleSort {
 
   /**
    * Sorts the inputArray in place in ascending order.

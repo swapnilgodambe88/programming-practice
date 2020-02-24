@@ -23,10 +23,10 @@ package com.programming.practice.problems.array;
  * <p>Input: [1,3,5,6], 0 Output: 0
  *
  * @see <a href = "https://leetcode.com/problems/search-insert-position/">Search Insert Position</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class SearchInsertPosition {
+public final class SearchInsertPosition {
 
   /**
    * @param nums The number array.

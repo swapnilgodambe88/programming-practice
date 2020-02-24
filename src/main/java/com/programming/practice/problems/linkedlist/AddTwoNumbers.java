@@ -14,10 +14,10 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * <p>Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8 Explanation: 342 + 465 = 807.
  *
  * @see <a href = "https://leetcode.com/problems/add-two-numbers/">LeetCode - Add Two Numbers</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class AddTwoNumbers {
+public final class AddTwoNumbers {
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     final ListNode resultHeadNode = new ListNode(-1);

@@ -25,10 +25,10 @@ import java.util.Map;
  * <p>Input: "MCMXCIV" Output: 1994 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  *
  * @see <a href = "https://leetcode.com/problems/roman-to-integer/">Roman to Integer</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class RomanToInteger {
+public final class RomanToInteger {
 
   // NOTE: Using LinkedHashMap to retain the order of insertion in map
   private static final Map<String, Integer> romanMap = new LinkedHashMap<>();

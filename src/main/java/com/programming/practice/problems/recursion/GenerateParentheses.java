@@ -12,10 +12,10 @@ import java.util.List;
  * <p>[ "((()))", "(()())", "(())()", "()(())", "()()()" ]
  *
  * @see <a href = "https://leetcode.com/problems/generate-parentheses/">Generate Parentheses</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class GenerateParentheses {
+public final class GenerateParentheses {
 
   /** Private member variable to store all possible combination of parenthesis. */
   private List<String> combinationList = new ArrayList<>();

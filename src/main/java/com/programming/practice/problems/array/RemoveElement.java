@@ -29,10 +29,10 @@ package com.programming.practice.problems.array;
  * <p>It doesn't matter what values are set beyond the returned length.
  *
  * @see <a href = "https://leetcode.com/problems/remove-element/">Remove Element</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class RemoveElement {
+public final class RemoveElement {
 
   /**
    * Removes the valueToRemove element from the array.

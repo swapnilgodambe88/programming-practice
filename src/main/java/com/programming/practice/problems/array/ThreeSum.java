@@ -19,10 +19,10 @@ import java.util.List;
  * <p>A solution set is: [ [-1, 0, 1], [-1, -1, 2] ]
  *
  * @see <a href = "https://leetcode.com/problems/3sum/">3 sum</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class ThreeSum {
+public final class ThreeSum {
 
   // private Map<Integer, Integer> getIndexMapKeyedByValue
 

@@ -7,7 +7,7 @@ package com.programming.practice.algorithms;
  *
  * @author Swapnil Godambe
  */
-final class InsertionSort {
+public final class InsertionSort {
 
   /**
    * Sorts the inputArray in place in ascending order.

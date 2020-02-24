@@ -7,7 +7,7 @@ package com.programming.practice.algorithms;
  *
  * @author Swapnil Godambe
  */
-final class QuickSort {
+public final class QuickSort {
 
   /**
    * Sorts the inputArray in place in ascending order.

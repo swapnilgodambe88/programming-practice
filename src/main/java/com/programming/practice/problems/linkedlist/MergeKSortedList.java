@@ -13,10 +13,10 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * <p>Output: 1->1->2->3->4->4->5->6
  *
  * @see <a href = "https://leetcode.com/problems/merge-k-sorted-lists/">Merge k Sorted Lists</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class MergeKSortedList {
+public final class MergeKSortedList {
 
   private MergeTwoSortedList mergeTwoSortedLists = new MergeTwoSortedList();
 

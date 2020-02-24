@@ -12,10 +12,10 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * <p>Given 1->2->3->4, you should return the list as 2->1->4->3.
  *
  * @see <a href = "https://leetcode.com/problems/swap-nodes-in-pairs/">Swap Nodes in Pairs</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class SwapNodesInPairs {
+public final class SwapNodesInPairs {
 
   /**
    * Performs in place swaps of two adjacent nodes.

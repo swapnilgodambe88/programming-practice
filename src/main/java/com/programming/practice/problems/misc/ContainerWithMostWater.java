@@ -12,10 +12,10 @@ package com.programming.practice.problems.misc;
  *
  * @see <a href = "https://leetcode.com/problems/container-with-most-water/">Container With Most
  *     Water</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class ContainerWithMostWater {
+public final class ContainerWithMostWater {
 
   /**
    * @param heightArray The height array.

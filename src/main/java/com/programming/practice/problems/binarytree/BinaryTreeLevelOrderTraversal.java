@@ -16,7 +16,7 @@ import java.util.Queue;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-final class BinaryTreeLevelOrderTraversal {
+public final class BinaryTreeLevelOrderTraversal {
 
   /**
    * Performs level order traversal on the binary tree.

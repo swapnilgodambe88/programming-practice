@@ -15,10 +15,10 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  *
  * @see <a href = "https://leetcode.com/problems/remove-nth-node-from-end-of-list/">Remove Nth Node
  *     From End of List</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class RemoveNthNodeFromEndOfList {
+public final class RemoveNthNodeFromEndOfList {
 
   /**
    * Removes the nth node from the list.

@@ -5,15 +5,14 @@ import com.programming.practice.problems.binarytree.util.TreeNode;
 /**
  * Given two binary trees, write a function to check if they are the same or not.
  *
- * <p>
- * Two binary trees are considered the same if they are structurally identical and the nodes have
+ * <p>Two binary trees are considered the same if they are structurally identical and the nodes have
  * the same value.
  *
  * @see <a href = "https://leetcode.com/problems/same-tree/">Same Tree</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
-final class SameTree {
+public final class SameTree {
 
   /**
    * Checks if two binary trees are same or not.

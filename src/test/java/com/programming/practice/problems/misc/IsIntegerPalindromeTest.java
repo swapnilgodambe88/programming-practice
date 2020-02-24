@@ -6,8 +6,8 @@ import org.junit.Test;
 /**
  * White box test for {@link IsIntegerPalindrome}.
  *
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
 public final class IsIntegerPalindromeTest {
 

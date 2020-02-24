@@ -17,8 +17,8 @@ import java.util.TreeMap;
  * <p>Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
  *
  * @see <a href = "https://leetcode.com/problems/two-sum/">LeetCode - Two Sum</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
 class TwoSum {
 

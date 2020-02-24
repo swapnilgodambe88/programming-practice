@@ -20,10 +20,10 @@ import java.util.List;
  * <p>A solution set is: [ [-1, 0, 0, 1], [-2, -1, 1, 2], [-2, 0, 0, 2] ]
  *
  * @see <a href = "https://leetcode.com/problems/4sum/">4 Sum</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class FourSum {
+public final class FourSum {
 
   /**
    * @param inputArray The input array.

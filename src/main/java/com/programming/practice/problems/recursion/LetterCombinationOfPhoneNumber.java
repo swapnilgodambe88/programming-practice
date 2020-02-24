@@ -16,10 +16,10 @@ import java.util.Map;
  *
  * @see <a href = "https://leetcode.com/problems/letter-combinations-of-a-phone-number/">Letter
  *     Combinations of a Phone Number</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class LetterCombinationOfPhoneNumber {
+public final class LetterCombinationOfPhoneNumber {
 
   /** A map of letters keyed by digit of the phone number */
   private static final Map<Character, String> letterMapKeyedByDigit = new HashMap<>();

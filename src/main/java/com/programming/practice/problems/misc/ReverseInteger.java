@@ -19,8 +19,8 @@ import java.util.List;
  * <p>Input: 120 Output: 21
  *
  * @see <a href = "https://leetcode.com/problems/reverse-integer/">Reverse Integer</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
 public final class ReverseInteger {
 

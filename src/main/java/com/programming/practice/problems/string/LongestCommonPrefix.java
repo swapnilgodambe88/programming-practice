@@ -15,10 +15,10 @@ package com.programming.practice.problems.string;
  * input strings.
  *
  * @see <a href = "https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class LongestCommonPrefix {
+public final class LongestCommonPrefix {
 
   /**
    * @param stringArray The string array of words.

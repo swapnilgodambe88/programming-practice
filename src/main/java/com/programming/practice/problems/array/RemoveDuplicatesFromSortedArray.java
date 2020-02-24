@@ -27,10 +27,10 @@ package com.programming.practice.problems.array;
  *
  * @see <a href = "https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Remove
  *     Duplicates from Sorted Array</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class RemoveDuplicatesFromSortedArray {
+public final class RemoveDuplicatesFromSortedArray {
 
   /**
    * Removes the duplicates from the sorted array in place and returns the lenght of the new array.

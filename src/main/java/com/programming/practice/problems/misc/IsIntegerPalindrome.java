@@ -22,10 +22,10 @@ package com.programming.practice.problems.misc;
  * <p>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  *
  * @see <a href = "https://leetcode.com/problems/palindrome-number/">Palindrome Number</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class IsIntegerPalindrome {
+public final class IsIntegerPalindrome {
 
   public boolean isPalindrome(final int inputNumber) {
 

@@ -11,10 +11,10 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * <p>Input: 1->2->4, 1->3->4 Output: 1->1->2->3->4->4
  *
  * @see <a href = "https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class MergeTwoSortedList {
+public final class MergeTwoSortedList {
 
   /**
    * Merge two sorted lists.

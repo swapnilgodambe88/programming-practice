@@ -15,10 +15,10 @@ package com.programming.practice.problems.string;
  *
  * @see <a href = "https://leetcode.com/problems/defanging-an-ip-address/">Defanging an IP
  *     Address</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class DefangIpAddress {
+public final class DefangIpAddress {
 
   public String defangIPaddr(String address) {
 

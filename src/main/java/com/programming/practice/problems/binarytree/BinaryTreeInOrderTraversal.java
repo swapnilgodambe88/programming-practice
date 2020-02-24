@@ -1,18 +1,18 @@
 package com.programming.practice.problems.binarytree;
 
+import com.programming.practice.problems.binarytree.util.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
-import com.programming.practice.problems.binarytree.util.TreeNode;
 
 /**
  * Given a binary tree, return the in-order traversal of its nodes' values.
  *
  * @see <a href = "https://leetcode.com/problems/binary-tree-inorder-traversal/">Binary Tree Inorder
- *      Traversal</a>
- * @author Swapnil Godambe.<br/>
- *         Copyright 2020.
+ *     Traversal</a>
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
-final class BinaryTreeInOrderTraversal {
+public final class BinaryTreeInOrderTraversal {
 
   /** Member variable to hold traversal values. */
   private final List<Integer> traversalNodes = new ArrayList<>();
