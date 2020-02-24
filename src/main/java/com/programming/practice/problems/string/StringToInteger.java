@@ -51,7 +51,8 @@ import java.util.List;
  *
  * @see <a href = "https://leetcode.com/problems/string-to-integer-atoi/">String to Integer
  *     (atoi)</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class StringToInteger {
 

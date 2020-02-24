@@ -15,7 +15,8 @@ package com.programming.practice.problems.string;
  * <p>Input: haystack = "aaaaa", needle = "bba" Output: -1
  *
  * @see <a href = "https://leetcode.com/problems/implement-strstr/">Implement strStr()</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class ImplementStrStr {
 

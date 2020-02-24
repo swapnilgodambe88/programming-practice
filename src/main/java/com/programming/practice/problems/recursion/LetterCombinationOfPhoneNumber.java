@@ -16,7 +16,8 @@ import java.util.Map;
  *
  * @see <a href = "https://leetcode.com/problems/letter-combinations-of-a-phone-number/">Letter
  *     Combinations of a Phone Number</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class LetterCombinationOfPhoneNumber {
 

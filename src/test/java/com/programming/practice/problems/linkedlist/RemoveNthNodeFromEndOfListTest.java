@@ -7,7 +7,8 @@ import org.junit.Test;
 /**
  * White box tests for {@link RemoveNthNodeFromEndOfList}.
  *
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public final class RemoveNthNodeFromEndOfListTest {
   private final RemoveNthNodeFromEndOfList obj = new RemoveNthNodeFromEndOfList();

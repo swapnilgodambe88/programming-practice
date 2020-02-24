@@ -22,7 +22,8 @@ import java.util.Set;
  * @see <a href =
  *     "https://leetcode.com/problems/longest-substring-without-repeating-characters/">Longest
  *     Substring Without Repeating Characters</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class LongestSubstringWithoutRepeatingCharacters {
 

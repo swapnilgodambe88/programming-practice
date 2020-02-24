@@ -9,7 +9,8 @@ import org.junit.rules.ExpectedException;
 /**
  * White box tests for {@link TwoSum}
  *
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public class TwoSumTest {
 

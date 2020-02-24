@@ -5,7 +5,8 @@ import java.util.Objects;
 /**
  * Singly linked-list representation.
  *
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public final class ListNode {
   public int val;

@@ -5,7 +5,8 @@ import java.util.Objects;
 /**
  * A node representation of a Tree.
  *
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public final class TreeNode {
   public int val;

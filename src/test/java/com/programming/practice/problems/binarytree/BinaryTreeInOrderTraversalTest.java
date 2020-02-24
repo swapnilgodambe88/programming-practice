@@ -10,7 +10,8 @@ import org.junit.Test;
 /**
  * White box tests for {@link BinaryTreeInOrderTraversal}.
  *
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public final class BinaryTreeInOrderTraversalTest {
 

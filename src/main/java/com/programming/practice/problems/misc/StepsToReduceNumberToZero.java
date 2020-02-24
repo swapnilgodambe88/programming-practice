@@ -13,7 +13,8 @@ package com.programming.practice.problems.misc;
  *
  * @see <a href = "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/">Number
  *     of Steps to Reduce a Number to Zero</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class StepsToReduceNumberToZero {
 

@@ -14,7 +14,8 @@ import java.util.Arrays;
  * <p>The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
  *
  * @see <a href = "https://leetcode.com/problems/3sum-closest/">3Sum Closest</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class ThreeSumClosest {
 

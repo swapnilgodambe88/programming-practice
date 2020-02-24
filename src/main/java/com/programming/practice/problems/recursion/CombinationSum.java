@@ -25,7 +25,8 @@ import java.util.stream.Collectors;
  * <p>Input: candidates = [2,3,5], target = 8, A solution set is: [ [2,2,2,2], [2,3,3], [3,5] ]
  *
  * @see <a href = "https://leetcode.com/problems/combination-sum/">Combination Sum</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 class CombinationSum {
 

@@ -17,7 +17,8 @@ package com.programming.practice.problems.array;
  * @see <a href =
  *     "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">Find
  *     First and Last Position of Element in Sorted Array</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class FirstLastPositionInSortedArray {
 

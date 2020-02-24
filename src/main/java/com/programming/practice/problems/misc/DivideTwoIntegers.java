@@ -17,7 +17,8 @@ package com.programming.practice.problems.misc;
  * <p>Input: dividend = 7, divisor = -3 Output: -2
  *
  * @see <a href = "https://leetcode.com/problems/divide-two-integers/">Divide Two Integers</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  * @note Failing few test cases around boundary integers on leetcode.
  */
 final class DivideTwoIntegers {

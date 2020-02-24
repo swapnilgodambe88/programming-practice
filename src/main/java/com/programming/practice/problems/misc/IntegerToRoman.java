@@ -25,7 +25,8 @@ import java.util.Map;
  * <p>Input: 1994 Output: "MCMXCIV" Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  *
  * @see <a href = "https://leetcode.com/problems/integer-to-roman/">Integer to Roman</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class IntegerToRoman {
 

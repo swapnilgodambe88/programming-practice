@@ -16,7 +16,8 @@ package com.programming.practice.problems.misc;
  * <p>Input: 1 Output: "1"
  *
  * @see <a href = "https://leetcode.com/problems/count-and-say/">Count and Say</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class CountAndSay {
 

@@ -1,15 +1,15 @@
 package com.programming.practice.problems.binarytree;
 
-import com.programming.practice.datastructure.BinaryTree;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
+import com.programming.practice.datastructure.BinaryTree;
 
 /**
  * White box tests for {@link SameTree}.
  *
  * @author Swapnil Godambe.<br>
- *     Copyright 2020.
+ *         Copyright 2020.
  */
 public final class SameTreeTest {
 

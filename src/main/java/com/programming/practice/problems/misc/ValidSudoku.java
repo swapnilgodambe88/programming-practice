@@ -14,7 +14,8 @@ import java.util.Set;
  * </ul>
  *
  * @see <a href = "https://leetcode.com/problems/valid-sudoku/">Valid Sudoku</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class ValidSudoku {
 

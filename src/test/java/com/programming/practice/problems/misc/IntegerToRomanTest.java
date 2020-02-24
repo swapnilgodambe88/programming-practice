@@ -7,7 +7,8 @@ import org.junit.Test;
  * White box tests for {@link IntegerToRoman}.
  *
  * @see <a href = ""></a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 public final class IntegerToRomanTest {
 

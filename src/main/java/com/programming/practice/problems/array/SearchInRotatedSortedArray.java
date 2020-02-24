@@ -22,7 +22,8 @@ package com.programming.practice.problems.array;
  *
  * @see <a href = "https://leetcode.com/problems/search-in-rotated-sorted-array/">Search in Rotated
  *     Sorted Array</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class SearchInRotatedSortedArray {
 

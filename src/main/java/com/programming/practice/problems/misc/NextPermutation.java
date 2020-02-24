@@ -15,7 +15,8 @@ package com.programming.practice.problems.misc;
  * <p>1,2,3 → 1,3,2 | 3,2,1 → 1,2,3 | 1,1,5 → 1,5,1
  *
  * @see <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class NextPermutation {
 

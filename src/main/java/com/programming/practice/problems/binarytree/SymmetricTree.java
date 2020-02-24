@@ -8,7 +8,8 @@ import com.programming.practice.problems.binarytree.util.TreeNode;
  * <p>For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
  *
  * @see <a href = "https://leetcode.com/problems/symmetric-tree/">Symmetric Tree</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class SymmetricTree {
 

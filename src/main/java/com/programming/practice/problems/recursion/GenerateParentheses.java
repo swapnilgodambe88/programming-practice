@@ -12,7 +12,8 @@ import java.util.List;
  * <p>[ "((()))", "(()())", "(())()", "()(())", "()()()" ]
  *
  * @see <a href = "https://leetcode.com/problems/generate-parentheses/">Generate Parentheses</a>
- * @author Swapnil Godambe. Copyright 2020.
+ * @author Swapnil Godambe.<br/>
+ *         Copyright 2020.
  */
 final class GenerateParentheses {
 
