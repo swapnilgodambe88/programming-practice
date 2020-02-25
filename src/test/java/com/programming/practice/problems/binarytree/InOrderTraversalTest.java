@@ -8,14 +8,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link BinaryTreeInOrderTraversal}.
+ * White box tests for {@link InOrderTraversal}.
  *
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class BinaryTreeInOrderTraversalTest {
+public final class InOrderTraversalTest {
 
-  private final BinaryTreeInOrderTraversal obj = new BinaryTreeInOrderTraversal();
+  private final InOrderTraversal obj = new InOrderTraversal();
   private final BinaryTree tree = new BinaryTree();
 
   @Test

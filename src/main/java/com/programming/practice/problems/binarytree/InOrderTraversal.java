@@ -12,7 +12,7 @@ import java.util.List;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class BinaryTreeInOrderTraversal {
+public final class InOrderTraversal {
 
   /** Member variable to hold traversal values. */
   private final List<Integer> traversalNodes = new ArrayList<>();
