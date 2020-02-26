@@ -16,37 +16,46 @@ public final class AddTwoNumbersTest {
 
   @Test
   public void testEqualSizeList() {
-    ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {2, 4, 3});
-    ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {5, 6, 4});
+    final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {2, 4, 3});
+    final ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {5, 6, 4});
 
-    ListNode expected = ListNode.convertArrayToLinkedList(new int[] {7, 0, 8});
+    final ListNode expected = ListNode.convertArrayToLinkedList(new int[] {7, 0, 8});
     Assert.assertEquals("Assertion failed", expected, obj.addTwoNumbers(l1, l2));
   }
 
   @Test
-  public void testUnequalSizeList() {
-    ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {1});
-    ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {9, 9});
+  public void testUnequalSizeList1() {
+    final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {1});
+    final ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {9, 9});
 
-    ListNode expected = ListNode.convertArrayToLinkedList(new int[] {0, 0, 1});
+    final ListNode expected = ListNode.convertArrayToLinkedList(new int[] {0, 0, 1});
+    Assert.assertEquals("Assertion failed", expected, obj.addTwoNumbers(l1, l2));
+  }
+
+  @Test
+  public void testUnequalSizeList2() {
+    final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {9, 9, 3, 9});
+    final ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {1});
+
+    final ListNode expected = ListNode.convertArrayToLinkedList(new int[] {0, 0, 4, 9});
     Assert.assertEquals("Assertion failed", expected, obj.addTwoNumbers(l1, l2));
   }
 
   @Test
   public void testEmptyList() {
-    ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {});
-    ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {});
+    final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {});
+    final ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {});
 
-    ListNode expected = ListNode.convertArrayToLinkedList(new int[] {});
+    final ListNode expected = ListNode.convertArrayToLinkedList(new int[] {});
     Assert.assertEquals("Assertion failed", expected, obj.addTwoNumbers(l1, l2));
   }
 
   @Test
   public void testOneEmptyList() {
-    ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {});
-    ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {9, 4, 6, 7});
+    final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {});
+    final ListNode l2 = ListNode.convertArrayToLinkedList(new int[] {9, 4, 6, 7});
 
-    ListNode expected = l2;
+    final ListNode expected = l2;
     Assert.assertEquals("Assertion failed", expected, obj.addTwoNumbers(l1, l2));
   }
 }

@@ -5,6 +5,8 @@ import com.programming.practice.problems.binarytree.util.TreeNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -40,6 +42,18 @@ public final class BinaryTreeTest {
   }
 
   @Test
+  public void testBFSSearchOnNullTree() {
+    Assert.assertEquals(Optional.empty(), obj.BFSSearch(10));
+  }
+
+  @Test
+  public void testBFSSearchOnNonExistantValue() {
+    obj.addNodeToTree(14);
+
+    Assert.assertEquals(Optional.empty(), obj.BFSSearch(199));
+  }
+
+  @Test
   public void testBFSSearch() {
     obj.createBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
@@ -69,6 +83,18 @@ public final class BinaryTreeTest {
   }
 
   @Test
+  public void testDFSSearchOnNullTree() {
+    Assert.assertEquals(Optional.empty(), obj.DFSSearch(10));
+  }
+
+  @Test
+  public void testDFSSearchOnNonExistantValue() {
+    obj.addNodeToTree(14);
+
+    Assert.assertEquals(Optional.empty(), obj.DFSSearch(199));
+  }
+
+  @Test
   public void testDFSSearch() {
     obj.createBinaryTree(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
@@ -95,5 +121,16 @@ public final class BinaryTreeTest {
     BinaryTreeTestUtil.assertOptionalNode(6, null, null, obj.DFSSearch(6));
     BinaryTreeTestUtil.assertOptionalNode(7, null, null, obj.DFSSearch(7));
     BinaryTreeTestUtil.assertOptionalNode(9, null, null, obj.DFSSearch(9));
+  }
+
+  @Test
+  public void testTraversal() {
+    // Tests that no exception is thrown while performing the traversal
+
+    obj.createBinaryTree(Arrays.asList(1, 2, 3, 4, null, 6, 7, null, 9));
+
+    obj.inOrderTraversal();
+    obj.preOrderTraversal();
+    obj.postOrderTraversal();
   }
 }
