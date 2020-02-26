@@ -29,7 +29,7 @@ public class BalancedTreeTest {
 
   @Test
   public void testSingleNodeTree() {
-    tree.addNodeToBinaryTree(8);
+    tree.addNodeToTree(8);
     Assert.assertTrue(obj.isBalanced(tree.getRootNode()));
   }
 }

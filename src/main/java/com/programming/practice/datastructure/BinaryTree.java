@@ -13,13 +13,13 @@ import java.util.Stack;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class BinaryTree {
+public class BinaryTree {
 
   /** The root node of the binary tree. */
-  private TreeNode root = null;
+  protected TreeNode root = null;
 
   /** The list of node present on the binary tree. */
-  private List<TreeNode> nodes = new LinkedList<>();
+  protected final List<TreeNode> nodes = new LinkedList<>();
 
   /** @return The root node of the binary tree. */
   public final TreeNode getRootNode() {
@@ -39,7 +39,7 @@ public final class BinaryTree {
     this.nodes.clear();
 
     for (final Integer element : elements) {
-      addNodeToBinaryTree(element);
+      addNodeToTree(element);
     }
 
     return root;
@@ -64,13 +64,51 @@ public final class BinaryTree {
     }
   }
 
+  /** Pre-order traversal of the binary tree. */
+  public final void preOrderTraversal() {
+    System.out.println("Pre-order Traversal: ");
+    BinaryTree.preOrderRecursion(root);
+  }
+
+  /**
+   * Pre-order traversal of a binary tree in recursion.
+   *
+   * @param node The node of the binary tree.
+   */
+  private static final void preOrderRecursion(final TreeNode node) {
+    if (node != null) {
+      System.out.println(node.val);
+      preOrderRecursion(node.left);
+      preOrderRecursion(node.right);
+    }
+  }
+
+  /** Pre-order traversal of the binary tree. */
+  public final void postOrderTraversal() {
+    System.out.println("Post-order Traversal: ");
+    BinaryTree.postOrderRecursion(root);
+  }
+
+  /**
+   * PPost-order traversal of a binary tree in recursion.
+   *
+   * @param node The node of the binary tree.
+   */
+  private static final void postOrderRecursion(final TreeNode node) {
+    if (node != null) {
+      postOrderRecursion(node.left);
+      postOrderRecursion(node.right);
+      System.out.println(node.val);
+    }
+  }
+
   /**
    * Adds an element to the binary tree.
    *
    * @param element The element to insert.
    * @throws IllegalArgumentException If element provided is null for the root of the binary tree.
    */
-  public final void addNodeToBinaryTree(final Integer element) throws IllegalArgumentException {
+  public void addNodeToTree(final Integer element) throws IllegalArgumentException {
 
     if (root == null && element == null) {
       throw new IllegalArgumentException("Null node provided as root for the binary tree");

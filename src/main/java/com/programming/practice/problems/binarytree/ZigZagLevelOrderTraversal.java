@@ -17,7 +17,7 @@ import java.util.Queue;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-final class ZigZagLevelOrderTraversal {
+public final class ZigZagLevelOrderTraversal {
 
   /**
    * Performs zigzag level traversal of the binary tree.

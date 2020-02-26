@@ -49,7 +49,7 @@ public class MaximumDepthTest {
 
   @Test
   public void testSingleRootNode() {
-    tree.addNodeToBinaryTree(9);
+    tree.addNodeToTree(9);
     Assert.assertEquals(1, obj.maxDepth(tree.getRootNode()));
   }
 }

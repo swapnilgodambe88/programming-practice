@@ -38,6 +38,9 @@ public final class MaximumDepth {
       return 1;
     }
 
+    final Integer a = null;
+    if (!(a instanceof Integer)) {}
+
     return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
   }
 }

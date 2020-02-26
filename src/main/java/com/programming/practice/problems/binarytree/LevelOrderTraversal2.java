@@ -16,7 +16,7 @@ import java.util.List;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-final class LevelOrderTraversal2 extends LevelOrderTraversal {
+public final class LevelOrderTraversal2 extends LevelOrderTraversal {
 
   /**
    * Performs level order traversal on the binary tree in reverse.

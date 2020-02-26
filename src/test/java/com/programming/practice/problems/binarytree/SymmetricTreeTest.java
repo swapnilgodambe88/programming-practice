@@ -24,7 +24,7 @@ public final class SymmetricTreeTest {
   @Test
   public void testSingleNodeTree() {
     final BinaryTree tree = new BinaryTree();
-    tree.addNodeToBinaryTree(10);
+    tree.addNodeToTree(10);
 
     Assert.assertTrue(obj.isSymmetric(tree.getRootNode()));
   }
