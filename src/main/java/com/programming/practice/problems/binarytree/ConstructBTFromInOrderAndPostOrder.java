@@ -2,39 +2,38 @@ package com.programming.practice.problems.binarytree;
 
 import com.programming.practice.problems.binarytree.util.TreeNode;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
+import java.util.Stack;
 
 /**
- * Given preorder and inorder traversal of a tree, construct the binary tree.
+ * Given inorder and postorder traversal of a tree, construct the binary tree.
  *
  * <p>Note: You may assume that duplicates do not exist in the tree.
  *
  * @see <a href =
- *     "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">Construct
- *     Binary Tree from Preorder and Inorder Traversal</a>
+ *     "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/">Construct
+ *     Binary Tree from Inorder and Postorder Traversal</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class ConstructBTFromInOrderAndPreOrder {
+public final class ConstructBTFromInOrderAndPostOrder {
 
-  // NOTE: preorderList nodes will be removed inside addNode.
-  private final Queue<Integer> preorderList = new LinkedList<>();
+  // NOTE: postorderList nodes will be removed inside addNode.
+  private final Stack<Integer> postorderStack = new Stack<>();
   private final List<Integer> inorderList = new ArrayList<>();
 
   /**
    * Constructs binary tree from preorder and inorder traversal list.
    *
-   * @param preorder The preorder traversal list.
    * @param inorder The inorder traversal list.
+   * @param postorder The postorder traversal list.
    * @return The root node of the constructed binary tree.
    */
-  public TreeNode buildTree(final int[] preorder, final int[] inorder) {
+  public TreeNode buildTree(final int[] inorder, final int[] postorder) {
 
     // Assumes the length of both the lists will be same
-    for (int i = 0; i < preorder.length; ++i) {
-      preorderList.add(preorder[i]);
+    for (int i = 0; i < inorder.length; ++i) {
+      postorderStack.push(postorder[i]);
       inorderList.add(inorder[i]);
     }
 
@@ -53,11 +52,11 @@ public final class ConstructBTFromInOrderAndPreOrder {
       return null;
     }
 
-    final TreeNode node = new TreeNode(preorderList.remove());
+    final TreeNode node = new TreeNode(postorderStack.pop());
 
-    // Since it's preorder, first add the left node then the right node
-    node.left = addNode(startIndex, inorderList.indexOf(node.val) - 1);
+    // Since it's postorder, first add the right node then the left node
     node.right = addNode(inorderList.indexOf(node.val) + 1, endIndex);
+    node.left = addNode(startIndex, inorderList.indexOf(node.val) - 1);
 
     return node;
   }

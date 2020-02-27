@@ -40,4 +40,32 @@ public final class SearchInsertPositionTest {
 
     Assert.assertEquals(0, obj.searchInsert(nums, 0));
   }
+
+  @Test
+  public void testSingleElementTargetNotPresent2() {
+    final int[] nums = new int[] {7, 10};
+
+    Assert.assertEquals(0, obj.searchInsert(nums, 0));
+  }
+
+  @Test
+  public void testSingleElementTargetNotPresent3() {
+    final int[] nums = new int[] {1, 3, 5, 6};
+
+    Assert.assertEquals(1, obj.searchInsert(nums, 2));
+  }
+
+  @Test
+  public void testSingleElementTargetNotPresent4() {
+    final int[] nums = new int[] {1, 3, 5, 6};
+
+    Assert.assertEquals(0, obj.searchInsert(nums, -1));
+  }
+
+  @Test
+  public void testSingleElementTargetNotPresent5() {
+    final int[] nums = new int[] {1, 3, 5, 6};
+
+    Assert.assertEquals(2, obj.searchInsert(nums, 4));
+  }
 }

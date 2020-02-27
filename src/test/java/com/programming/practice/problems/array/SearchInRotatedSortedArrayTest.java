@@ -28,7 +28,21 @@ public final class SearchInRotatedSortedArrayTest {
   }
 
   @Test
-  public void testSingleElementTargetNotPresent() {
+  public void testRotatedElementPresent3() {
+    final int[] nums = new int[] {9, 10, 0, 1, 2, 3, 4, 5, 6, 7, 8};
+
+    Assert.assertEquals(9, obj.search(nums, 7));
+  }
+
+  @Test
+  public void testRotatedElementPresent4() {
+    final int[] nums = new int[] {9, 10, 0, 1, 2, 3, 4, 5, 6, 7, 8};
+
+    Assert.assertEquals(1, obj.search(nums, 10));
+  }
+
+  @Test
+  public void testSingleElementTargetNotPresent1() {
     final int[] nums = new int[] {1};
 
     Assert.assertEquals(-1, obj.search(nums, 0));

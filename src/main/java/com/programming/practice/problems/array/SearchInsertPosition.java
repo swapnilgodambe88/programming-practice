@@ -58,16 +58,7 @@ public final class SearchInsertPosition {
 
     System.out.println("Left index: " + left + " | right index: " + right);
 
-    // Element not found. Left and right are swapped and differ by 1 position
-    if (target > nums[right] && target < nums[left]) // target between right and left
-    {
-      return right + 1;
-    } else if (target < nums[right]) // target to left of right
-    {
-      return right - 1;
-    } else // target to right of left
-    {
-      return left + 1;
-    }
+    // Element not found. It will be inserted to right of right
+    return right + 1;
   }
 }

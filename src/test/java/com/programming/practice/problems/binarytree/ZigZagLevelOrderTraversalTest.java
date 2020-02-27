@@ -25,6 +25,12 @@ public class ZigZagLevelOrderTraversalTest {
   }
 
   @Test
+  public void testEmptyTree() {
+    final List<List<Integer>> expectedList = new ArrayList<>();
+    Assert.assertEquals(expectedList, obj.zigzagLevelOrder(tree.getRootNode()));
+  }
+
+  @Test
   public void testValidBinaryTree1() {
     tree.createBinaryTree(Arrays.asList(3, 9, 20, null, null, 15, 7));
     final List<List<Integer>> expectedList = new ArrayList<>();
