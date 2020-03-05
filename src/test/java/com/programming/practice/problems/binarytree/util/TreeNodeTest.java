@@ -45,6 +45,13 @@ public final class TreeNodeTest {
   }
 
   @Test
+  public void testSameObject() {
+    final TreeNode node1 = new TreeNode(18);
+
+    Assert.assertTrue(node1.equals(node1));
+  }
+
+  @Test
   public void testNotEqualsObjectInVal() {
     final TreeNode node1 = new TreeNode(18);
     final TreeNode node2 = new TreeNode(19);

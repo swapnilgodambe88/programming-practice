@@ -3,7 +3,9 @@ package com.programming.practice.algorithms;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 /**
  * White box test for {@link BubbleSort}.
@@ -13,6 +15,15 @@ import org.junit.Test;
  */
 public final class BubbleSortTest {
 
+  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
+
+  @Test
+  public void testConstructorInvocationThrowsError() {
+    exceptionRule.expect(UnsupportedOperationException.class);
+    exceptionRule.expectMessage("Constructor invocation for BubbleSort forbidden");
+
+    new BubbleSort();
+  }
   /** Verifies ascending Bubble sort for empty array. */
   @Test
   public void testEmptyAscending() {

@@ -9,6 +9,11 @@ package com.programming.practice.algorithms;
  */
 public final class BubbleSort {
 
+  /** Constructor for {@link BubbleSort}. Declared private to prevent direct instantiation. */
+  public BubbleSort() {
+    throw new UnsupportedOperationException("Constructor invocation for BubbleSort forbidden");
+  }
+
   /**
    * Sorts the inputArray in place in ascending order.
    *
@@ -24,7 +29,7 @@ public final class BubbleSort {
 
         if (inputArray[j + 1] < inputArray[j]) {
           innerSwapHappened = true;
-          int temp = inputArray[j];
+          final int temp = inputArray[j];
           inputArray[j] = inputArray[j + 1];
           inputArray[j + 1] = temp;
         }
@@ -51,7 +56,7 @@ public final class BubbleSort {
 
         if (inputArray[j + 1] > inputArray[j]) {
           innerSwapHappened = true;
-          int temp = inputArray[j];
+          final int temp = inputArray[j];
           inputArray[j] = inputArray[j + 1];
           inputArray[j + 1] = temp;
         }

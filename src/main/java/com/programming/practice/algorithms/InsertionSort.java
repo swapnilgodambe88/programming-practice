@@ -9,6 +9,11 @@ package com.programming.practice.algorithms;
  */
 public final class InsertionSort {
 
+  /** Constructor for {@link InsertionSort}. Declared private to prevent direct instantiation. */
+  public InsertionSort() {
+    throw new UnsupportedOperationException("Constructor invocation for InsertionSort forbidden");
+  }
+
   /**
    * Sorts the inputArray in place in ascending order.
    *

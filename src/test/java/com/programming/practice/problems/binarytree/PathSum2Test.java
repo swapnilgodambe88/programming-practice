@@ -25,8 +25,6 @@ public final class PathSum2Test {
         tree.createBinaryTree(
             Arrays.asList(5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, 5, 1));
 
-    tree.TopView(root);
-
     final List<List<Integer>> expectedList = new ArrayList<>();
 
     expectedList.add(Arrays.asList(5, 4, 11, 2));

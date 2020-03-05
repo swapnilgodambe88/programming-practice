@@ -3,7 +3,9 @@ package com.programming.practice.algorithms;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 /**
  * White box test for {@link QuickSort}.
@@ -13,6 +15,15 @@ import org.junit.Test;
  */
 public final class QuickSortTest {
 
+  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
+
+  @Test
+  public void testConstructorInvocationThrowsError() {
+    exceptionRule.expect(UnsupportedOperationException.class);
+    exceptionRule.expectMessage("Constructor invocation for QuickSort forbidden");
+
+    new QuickSort();
+  }
   /** Verifies ascending Bubble sort for empty array. */
   @Test
   public void testEmptyAscending() {
@@ -24,7 +35,7 @@ public final class QuickSortTest {
     assertTrue(Arrays.equals(inputArray, expectedSortedArray));
   }
 
-  /** Verifies ascending possitive Bubble sort for random numbers. */
+  /** Verifies ascending positive Bubble sort for random numbers. */
   @Test
   public void testRandomPositiveAscending() {
     final int inputArray[] = {9, 11, 2, 5, 8, 9, 17, 14, 1, 0};

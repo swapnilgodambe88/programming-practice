@@ -3,12 +3,9 @@ package com.programming.practice.datastructure;
 import com.programming.practice.problems.binarytree.util.TreeNode;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.Queue;
 import java.util.Stack;
-import java.util.TreeMap;
 
 /**
  * A binary tree representation.
@@ -205,47 +202,5 @@ public class BinaryTree {
     }
 
     return Optional.empty();
-  }
-
-  public final void TopView(final TreeNode root) {
-    class QueueObj {
-      TreeNode node;
-      int hd;
-
-      QueueObj(final TreeNode node, final int hd) {
-        this.node = node;
-        this.hd = hd;
-      }
-    }
-    final Queue<QueueObj> q = new LinkedList<QueueObj>();
-    final Map<Integer, TreeNode> topViewMap = new TreeMap<Integer, TreeNode>();
-
-    if (root == null) {
-      return;
-    } else {
-      q.add(new QueueObj(root, 0));
-    }
-
-    System.out.println("The top view of the tree is : ");
-
-    // count function returns 1 if the container
-    // contains an element whose key is equivalent
-    // to hd, or returns zero otherwise.
-    while (!q.isEmpty()) {
-      final QueueObj tmpNode = q.poll();
-      if (!topViewMap.containsKey(tmpNode.hd)) {
-        topViewMap.put(tmpNode.hd, tmpNode.node);
-      }
-
-      if (tmpNode.node.left != null) {
-        q.add(new QueueObj(tmpNode.node.left, tmpNode.hd - 1));
-      }
-      if (tmpNode.node.right != null) {
-        q.add(new QueueObj(tmpNode.node.right, tmpNode.hd + 1));
-      }
-    }
-    for (final Entry<Integer, TreeNode> entry : topViewMap.entrySet()) {
-      System.out.println(entry.getValue().val);
-    }
   }
 }

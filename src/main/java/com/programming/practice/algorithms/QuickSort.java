@@ -9,6 +9,11 @@ package com.programming.practice.algorithms;
  */
 public final class QuickSort {
 
+  /** Constructor for {@link QuickSort}. Declared private to prevent direct instantiation. */
+  public QuickSort() {
+    throw new UnsupportedOperationException("Constructor invocation for QuickSort forbidden");
+  }
+
   /**
    * Sorts the inputArray in place in ascending order.
    *
@@ -54,13 +59,13 @@ public final class QuickSort {
         smallerArrayIndex++;
 
         // Swap the inputArray[i] with next first element outside of the smaller array
-        int tempSwap = inputArray[i];
+        final int tempSwap = inputArray[i];
         inputArray[i] = inputArray[smallerArrayIndex];
         inputArray[smallerArrayIndex] = tempSwap;
       }
     }
 
-    int tempSwap = inputArray[smallerArrayIndex + 1];
+    final int tempSwap = inputArray[smallerArrayIndex + 1];
     inputArray[smallerArrayIndex + 1] = inputArray[endIndex];
     inputArray[endIndex] = tempSwap;
 

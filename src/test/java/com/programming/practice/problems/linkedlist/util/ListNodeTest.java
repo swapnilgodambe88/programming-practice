@@ -35,6 +35,13 @@ public class ListNodeTest {
   }
 
   @Test
+  public void testSameObject() {
+    final ListNode node1 = new ListNode(3);
+
+    Assert.assertTrue(node1.equals(node1));
+  }
+
+  @Test
   public void testEqualsObject() {
     final ListNode node1 = new ListNode(3);
     final ListNode node2 = new ListNode(3);
@@ -53,7 +60,7 @@ public class ListNodeTest {
   @Test
   public void testNotEqualsObjectInNext() {
     final ListNode node1 = new ListNode(3);
-    final ListNode node2 = new ListNode(4);
+    final ListNode node2 = new ListNode(3);
     node2.next = new ListNode(99);
 
     Assert.assertFalse(node1.equals(node2));
