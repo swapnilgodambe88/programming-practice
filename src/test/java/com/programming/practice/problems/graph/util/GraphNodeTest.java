@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link GraphNode}.
+ * White box tests for {@link com.programming.practice.problems.graph.util.GraphNode}.
  *
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.

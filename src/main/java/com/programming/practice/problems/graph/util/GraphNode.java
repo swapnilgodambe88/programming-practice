@@ -81,7 +81,7 @@ public final class GraphNode {
       return false;
     }
 
-    if (!Objects.equals(this.neighbors, other.neighbors)) {
+    if (!Objects.deepEquals(this.neighbors, other.neighbors)) {
       return false;
     }
 
