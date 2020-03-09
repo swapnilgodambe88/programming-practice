@@ -10,32 +10,26 @@ import java.util.Set;
 /**
  * There are a total of n courses you have to take, labeled from 0 to n-1.
  *
- * <p>
- * Some courses may have prerequisites, for example to take course 0 you have to first take course
- * 1, which is expressed as a pair: [0,1]
+ * <p>Some courses may have prerequisites, for example to take course 0 you have to first take
+ * course 1, which is expressed as a pair: [0,1]
  *
- * <p>
- * Given the total number of courses and a list of prerequisite pairs, is it possible for you to
+ * <p>Given the total number of courses and a list of prerequisite pairs, is it possible for you to
  * finish all courses?
  *
- * <p>
- * Example 1:
+ * <p>Example 1:
  *
- * <p>
- * Input: 2, [[1,0]] Output: true Explanation: There are a total of 2 courses to take. To take
+ * <p>Input: 2, [[1,0]] Output: true Explanation: There are a total of 2 courses to take. To take
  * course 1 you should have finished course 0. So it is possible.
  *
- * <p>
- * Example 2:
+ * <p>Example 2:
  *
- * <p>
- * Input: 2, [[1,0],[0,1]] Output: false Explanation: There are a total of 2 courses to take. To
+ * <p>Input: 2, [[1,0],[0,1]] Output: false Explanation: There are a total of 2 courses to take. To
  * take course 1 you should have finished course 0, and to take course 0 you should also have
  * finished course 1. So it is impossible.
  *
  * @see <a href = "https://leetcode.com/problems/course-schedule/">Course Schedule</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  * @note Failing two test cases on leetcode because of time limit exceeded.
  */
 public final class CourseSchedule {
@@ -117,8 +111,8 @@ public final class CourseSchedule {
       }
     }
 
-    // Loop is only present if the above if condition is not executed because of node present on the
-    // nodesVisitedSoFar list.
+    // Loop is only present if the above condition is not executed because the node is present on
+    // the nodesVisitedSoFar list.
     if (!executedIfCondition && nodesVisitedSoFar.contains(startNode)) {
       return false;
     }

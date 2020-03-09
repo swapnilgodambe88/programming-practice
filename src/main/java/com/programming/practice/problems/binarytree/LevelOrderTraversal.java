@@ -42,7 +42,7 @@ public class LevelOrderTraversal {
       final int levelNodeCount = queue.size();
 
       for (int i = 0; i < levelNodeCount; ++i) {
-        final TreeNode dequeuedNode = queue.remove();
+        final TreeNode dequeuedNode = queue.poll();
 
         if (dequeuedNode.left != null) {
           levelList.add(dequeuedNode.left.val);

@@ -116,7 +116,7 @@ public final class Graph {
     queue.add(startNode);
 
     while (!queue.isEmpty()) {
-      final int dequeuedNode = queue.remove();
+      final int dequeuedNode = queue.poll();
       visitedNodes.add(dequeuedNode);
       bfsTraversal[index++] = dequeuedNode;
 

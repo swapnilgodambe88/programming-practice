@@ -152,7 +152,7 @@ public class BinaryTree {
     queue.add(root);
     while (!queue.isEmpty()) {
 
-      final TreeNode poppedNode = queue.remove();
+      final TreeNode poppedNode = queue.poll();
 
       if (poppedNode.val == valueToSearch) {
         return Optional.of(poppedNode);

@@ -42,7 +42,7 @@ public final class ZigZagLevelOrderTraversal {
       final int levelNodeCount = queue.size();
 
       for (int i = 0; i < levelNodeCount; ++i) {
-        final TreeNode dequeuedNode = queue.remove();
+        final TreeNode dequeuedNode = queue.poll();
 
         if (dequeuedNode.left != null) {
           levelNodes.add(dequeuedNode.left.val);
