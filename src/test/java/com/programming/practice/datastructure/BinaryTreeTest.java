@@ -7,20 +7,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 /**
  * White box tests for {@link BinaryTree}
  *
- * <p>Copyright 2020.<br>
- *
- * @author Swapnil Godambe.
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
  */
 public final class BinaryTreeTest {
-
-  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
 
   private final BinaryTree obj = new BinaryTree();
 
@@ -33,12 +28,14 @@ public final class BinaryTreeTest {
 
   @Test
   public void testCreateBinaryTreeThrowsExceptionForNullNode() {
-    exceptionRule.expect(IllegalArgumentException.class);
-    exceptionRule.expectMessage("Null node provided as root for the binary tree");
-
-    final List<Integer> nodes = new ArrayList<>();
-    nodes.add(null);
-    obj.createBinaryTree(nodes);
+    Assert.assertThrows(
+        "Null node provided as root for the binary tree",
+        IllegalArgumentException.class,
+        () -> {
+          final List<Integer> nodes = new ArrayList<>();
+          nodes.add(null);
+          obj.createBinaryTree(nodes);
+        });
   }
 
   @Test

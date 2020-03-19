@@ -2,9 +2,7 @@ package com.programming.practice.problems.array;
 
 import java.util.Arrays;
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 /**
  * White box tests for {@link TwoSum}
@@ -13,8 +11,6 @@ import org.junit.rules.ExpectedException;
  *     Copyright 2020.
  */
 public class TwoSumTest {
-
-  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
 
   private final TwoSum obj = new TwoSum();
 
@@ -26,10 +22,12 @@ public class TwoSumTest {
   public void testNoSolutionExists() {
     final int[] inputArray = {1, 2, 3, 4, 5, 6};
 
-    exceptionRule.expectMessage("No solution exists for the given inputArray");
-    exceptionRule.expect(IllegalArgumentException.class);
-
-    obj.twoSum(inputArray, 20);
+    Assert.assertThrows(
+        "No solution exists for the given inputArray",
+        IllegalArgumentException.class,
+        () -> {
+          obj.twoSum(inputArray, 20);
+        });
   }
 
   @Test
@@ -37,10 +35,12 @@ public class TwoSumTest {
     final int[] inputArray = {1, 2, 3, 4, 5, 6};
     final TwoSum obj = new TwoSum();
 
-    exceptionRule.expectMessage("No solution exists for the given inputArray");
-    exceptionRule.expect(IllegalArgumentException.class);
-
-    obj.twoSum(inputArray, 12);
+    Assert.assertThrows(
+        "No solution exists for the given inputArray",
+        IllegalArgumentException.class,
+        () -> {
+          obj.twoSum(inputArray, 12);
+        });
   }
 
   @Test
@@ -102,9 +102,11 @@ public class TwoSumTest {
     final int[] inputArray = {1, 9, 8, 59};
     final TwoSum obj = new TwoSum();
 
-    exceptionRule.expectMessage("No solution exists for the given inputArray");
-    exceptionRule.expect(IllegalArgumentException.class);
-
-    obj.twoSum(inputArray, 18);
+    Assert.assertThrows(
+        "No solution exists for the given inputArray",
+        IllegalArgumentException.class,
+        () -> {
+          obj.twoSum(inputArray, 18);
+        });
   }
 }

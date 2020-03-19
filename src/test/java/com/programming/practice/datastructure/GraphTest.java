@@ -7,9 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 /**
  * Black box tests for {@link Graph}
@@ -18,8 +16,6 @@ import org.junit.rules.ExpectedException;
  *     Copyright 2020.
  */
 public final class GraphTest {
-
-  @Rule public final ExpectedException exceptionRule = ExpectedException.none();
 
   @Test
   public void testConstructorWithNoArguments() {
@@ -50,10 +46,12 @@ public final class GraphTest {
 
     Assert.assertEquals(1, graph.getGraphNodes().size());
 
-    exceptionRule.expect(UnsupportedOperationException.class);
-    exceptionRule.expectMessage("Graph already contains a node with value: 1");
-
-    graph.addNode(1);
+    Assert.assertThrows(
+        "Graph already contains a node with value: 1",
+        UnsupportedOperationException.class,
+        () -> {
+          graph.addNode(1);
+        });
   }
 
   @Test
@@ -97,20 +95,24 @@ public final class GraphTest {
   public void testLinkNodesThrowsExceptionNode1NotPresent() {
     final Graph graph = new Graph(new int[] {1, 2});
 
-    exceptionRule.expect(IllegalArgumentException.class);
-    exceptionRule.expectMessage(
-        "Either node1 = 3 or node2 = 2 or both are not present on the graph.");
-    graph.linkNodes(3, 2);
+    Assert.assertThrows(
+        "Either node1 = 3 or node2 = 2 or both are not present on the graph.",
+        IllegalArgumentException.class,
+        () -> {
+          graph.linkNodes(3, 2);
+        });
   }
 
   @Test
   public void testLinkNodesThrowsExceptionNode2NotPresent() {
     final Graph graph = new Graph(new int[] {1, 2});
 
-    exceptionRule.expect(IllegalArgumentException.class);
-    exceptionRule.expectMessage(
-        "Either node1 = 1 or node2 = 10 or both are not present on the graph.");
-    graph.linkNodes(1, 10);
+    Assert.assertThrows(
+        "Either node1 = 1 or node2 = 10 or both are not present on the graph.",
+        IllegalArgumentException.class,
+        () -> {
+          graph.linkNodes(1, 10);
+        });
   }
 
   @Test
@@ -128,10 +130,12 @@ public final class GraphTest {
   public void testBFSTraversalThrowsException() {
     final Graph graph = new Graph(new int[] {1, 2, 3, 4, 5, 6, 7});
 
-    exceptionRule.expect(IllegalArgumentException.class);
-    exceptionRule.expectMessage("StartNode = 99 not present on the graph for BFS traversal.");
-
-    graph.BFSTraversal(99);
+    Assert.assertThrows(
+        "StartNode = 99 not present on the graph for BFS traversal.",
+        IllegalArgumentException.class,
+        () -> {
+          graph.BFSTraversal(99);
+        });
   }
 
   @Test
@@ -154,10 +158,12 @@ public final class GraphTest {
   public void testDFSTraversalThrowsException() {
     final Graph graph = new Graph(new int[] {1, 2, 3, 4, 5, 6, 7});
 
-    exceptionRule.expect(IllegalArgumentException.class);
-    exceptionRule.expectMessage("StartNode = 99 not present on the graph for DFS traversal.");
-
-    graph.DFSTraversal(99);
+    Assert.assertThrows(
+        "StartNode = 99 not present on the graph for DFS traversal.",
+        IllegalArgumentException.class,
+        () -> {
+          graph.BFSTraversal(99);
+        });
   }
 
   @Test
