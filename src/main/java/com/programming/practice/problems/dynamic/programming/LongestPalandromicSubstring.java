@@ -15,7 +15,8 @@ package com.programming.practice.problems.dynamic.programming;
  * @see <a href = "https://leetcode.com/problems/longest-palindromic-substring/">Longest Palindromic
  *     Substring</a>
  * @author Swapnil Godambe.<br>
- *     Copyright 2020.
+ *     Copyright 2020.<br>
+ * @company eBay
  */
 public final class LongestPalandromicSubstring {
 
@@ -65,7 +66,7 @@ public final class LongestPalandromicSubstring {
 
     // isPalindromeArray (i, j) is true if String from index i to index j is palindrome. Otherwise
     // false
-    boolean[][] isPalindromeArray = new boolean[inputString.length()][inputString.length()];
+    final boolean[][] isPalindromeArray = new boolean[inputString.length()][inputString.length()];
 
     String answer = "";
 

@@ -25,7 +25,7 @@ public final class LetterCombinationOfPhoneNumber {
   private static final Map<Character, String> letterMapKeyedByDigit = new HashMap<>();
 
   /** A combination list to store the result */
-  private List<String> combinationList = new ArrayList<>();
+  private final List<String> combinationList = new ArrayList<>();
 
   static {
     letterMapKeyedByDigit.put('1', "");
@@ -40,7 +40,7 @@ public final class LetterCombinationOfPhoneNumber {
   }
 
   /**
-   * @param digits Digits representing phone number.
+   * @param digitString Digits representing phone number.
    * @return List of combination of letters.
    */
   public List<String> letterCombinations(final String digitString) {

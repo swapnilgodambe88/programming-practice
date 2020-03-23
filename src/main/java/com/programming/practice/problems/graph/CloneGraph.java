@@ -17,10 +17,11 @@ public final class CloneGraph {
 
   /** A map to maintain count of visited nodes on the cloned map. */
   private final Map<Integer, GraphNode> visitedNode = new HashMap<>();
+
   /**
    * Clones a graph.
    *
-   * @param GraphNode The start node of the original graph.
+   * @param node The start node of the original graph.
    * @return The start node of the cloned graph.
    */
   public GraphNode cloneGraph(final GraphNode node) {
