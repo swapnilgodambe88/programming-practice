@@ -13,6 +13,7 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * @see <a href = "https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class MergeTwoSortedList {
 
@@ -24,7 +25,7 @@ public final class MergeTwoSortedList {
    * @return Merged sorted list.
    */
   public ListNode mergeTwoLists(final ListNode l1, final ListNode l2) {
-    ListNode mergeList = new ListNode(-1);
+    final ListNode mergeList = new ListNode(-1);
 
     ListNode iter1 = l1;
     ListNode iter2 = l2;

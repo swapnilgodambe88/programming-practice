@@ -14,6 +14,7 @@ package com.programming.practice.problems.misc;
  *     Water</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class ContainerWithMostWater {
 
@@ -32,7 +33,7 @@ public final class ContainerWithMostWater {
       final int height = Math.min(heightArray[startIndex], heightArray[endIndex]);
 
       if (maxArea < width * height) {
-        maxArea = (int) (width * height);
+        maxArea = width * height;
       }
 
       if (heightArray[startIndex] < heightArray[endIndex]) {

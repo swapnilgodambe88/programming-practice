@@ -19,6 +19,7 @@ package com.programming.practice.problems.misc;
  * @see <a href = "https://leetcode.com/problems/divide-two-integers/">Divide Two Integers</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  * @note Failing few test cases around boundary integers on leetcode.
  */
 public final class DivideTwoIntegers {

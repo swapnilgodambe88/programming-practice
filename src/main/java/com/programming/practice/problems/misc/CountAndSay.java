@@ -18,6 +18,7 @@ package com.programming.practice.problems.misc;
  * @see <a href = "https://leetcode.com/problems/count-and-say/">Count and Say</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class CountAndSay {
 

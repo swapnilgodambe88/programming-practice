@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
  * @see <a href = "https://leetcode.com/problems/combination-sum/">Combination Sum</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 class CombinationSum {
 

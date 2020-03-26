@@ -26,6 +26,7 @@ package com.programming.practice.problems.misc;
  * @see <a href = "https://leetcode.com/problems/rotate-image/">Rotate Image</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class RotateImage {
 

@@ -27,6 +27,7 @@ import java.util.Map;
  * @see <a href = "https://leetcode.com/problems/roman-to-integer/">Roman to Integer</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class RomanToInteger {
 
@@ -63,7 +64,7 @@ public final class RomanToInteger {
     int index = 0;
 
     while (index < romanString.length()) {
-      StringBuilder romanStringToEvaluate = new StringBuilder();
+      final StringBuilder romanStringToEvaluate = new StringBuilder();
       romanStringToEvaluate.append(romanCharArray[index++]);
 
       if (index < romanString.length()) {

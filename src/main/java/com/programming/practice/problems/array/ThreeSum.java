@@ -21,6 +21,7 @@ import java.util.List;
  * @see <a href = "https://leetcode.com/problems/3sum/">3 sum</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class ThreeSum {
 

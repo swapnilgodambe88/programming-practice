@@ -17,6 +17,7 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  *     From End of List</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class RemoveNthNodeFromEndOfList {
 
@@ -28,7 +29,7 @@ public final class RemoveNthNodeFromEndOfList {
    * @return The head node of the new linked list.
    */
   public ListNode removeNthFromEnd(final ListNode node, final int n) {
-    ListNode resultHead = node;
+    final ListNode resultHead = node;
 
     ListNode iter1 = node, iter2 = node;
     int movePosition = n;
@@ -54,7 +55,7 @@ public final class RemoveNthNodeFromEndOfList {
       iter2 = iter2.next;
     }
 
-    ListNode nodeToDelete = iter1.next;
+    final ListNode nodeToDelete = iter1.next;
     iter1.next = nodeToDelete.next;
 
     return resultHead;

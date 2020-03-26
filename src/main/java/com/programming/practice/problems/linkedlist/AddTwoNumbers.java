@@ -16,10 +16,11 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * @see <a href = "https://leetcode.com/problems/add-two-numbers/">LeetCode - Add Two Numbers</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class AddTwoNumbers {
 
-  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+  public ListNode addTwoNumbers(final ListNode l1, final ListNode l2) {
     final ListNode resultHeadNode = new ListNode(-1);
 
     ListNode l1Iterator = l1;

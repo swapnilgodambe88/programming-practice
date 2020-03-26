@@ -17,6 +17,7 @@ package com.programming.practice.problems.misc;
  * @see <a href = "https://leetcode.com/problems/next-permutation/">Next Permutation</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class NextPermutation {
 

@@ -18,6 +18,7 @@ import java.util.Map;
  *     Combinations of a Phone Number</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class LetterCombinationOfPhoneNumber {
 

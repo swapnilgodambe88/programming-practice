@@ -14,11 +14,12 @@ import java.util.List;
  * @see <a href = "https://leetcode.com/problems/generate-parentheses/">Generate Parentheses</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class GenerateParentheses {
 
   /** Private member variable to store all possible combination of parenthesis. */
-  private List<String> combinationList = new ArrayList<>();
+  private final List<String> combinationList = new ArrayList<>();
 
   /**
    * Generate all possible combination of parentheses for a given n.

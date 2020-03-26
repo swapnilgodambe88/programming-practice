@@ -34,6 +34,7 @@ import java.util.Stack;
  * @see <a href = "https://leetcode.com/problems/valid-parentheses/">Valid Parentheses</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class ValidParentheses {
 

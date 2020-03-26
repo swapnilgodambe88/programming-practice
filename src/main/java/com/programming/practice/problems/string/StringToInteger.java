@@ -53,6 +53,7 @@ import java.util.List;
  *     (atoi)</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class StringToInteger {
 
@@ -63,7 +64,7 @@ public final class StringToInteger {
    * @return String with trimmed white spaces in the beginning.
    */
   private String trimLeadingWhiteSpaces(final String inputString) {
-    StringBuilder stringBuilder = new StringBuilder();
+    final StringBuilder stringBuilder = new StringBuilder();
 
     boolean encounteredNonWhiteCharacter = false;
     for (final char character : inputString.toCharArray()) {

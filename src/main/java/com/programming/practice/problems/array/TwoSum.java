@@ -19,6 +19,7 @@ import java.util.TreeMap;
  * @see <a href = "https://leetcode.com/problems/two-sum/">LeetCode - Two Sum</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 class TwoSum {
 

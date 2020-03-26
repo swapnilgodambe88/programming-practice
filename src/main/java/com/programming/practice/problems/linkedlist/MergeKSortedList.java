@@ -15,10 +15,11 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * @see <a href = "https://leetcode.com/problems/merge-k-sorted-lists/">Merge k Sorted Lists</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class MergeKSortedList {
 
-  private MergeTwoSortedList mergeTwoSortedLists = new MergeTwoSortedList();
+  private final MergeTwoSortedList mergeTwoSortedLists = new MergeTwoSortedList();
 
   /**
    * Merges K sorted lists.

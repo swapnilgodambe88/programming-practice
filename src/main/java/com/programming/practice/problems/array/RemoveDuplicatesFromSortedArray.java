@@ -29,6 +29,7 @@ package com.programming.practice.problems.array;
  *     Duplicates from Sorted Array</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class RemoveDuplicatesFromSortedArray {
 

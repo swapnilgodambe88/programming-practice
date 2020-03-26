@@ -19,6 +19,7 @@ package com.programming.practice.problems.array;
  *     First and Last Position of Element in Sorted Array</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class FirstLastPositionInSortedArray {
 

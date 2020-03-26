@@ -22,6 +22,7 @@ import java.util.List;
  * @see <a href = "https://leetcode.com/problems/4sum/">4 Sum</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class FourSum {
 
@@ -30,7 +31,7 @@ public final class FourSum {
    * @param target The target for the 4 sum.
    * @return Combination of 4 integers such that their sum equals target.
    */
-  public List<List<Integer>> fourSum(final int[] inputArray, int target) {
+  public List<List<Integer>> fourSum(final int[] inputArray, final int target) {
     Arrays.sort(inputArray);
 
     final List<List<Integer>> fourSumList = new ArrayList<>();

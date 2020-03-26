@@ -25,6 +25,7 @@ package com.programming.practice.problems.array;
  * @see <a href = "https://leetcode.com/problems/search-insert-position/">Search Insert Position</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class SearchInsertPosition {
 

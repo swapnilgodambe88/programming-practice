@@ -24,6 +24,7 @@ package com.programming.practice.problems.array;
  *     Sorted Array</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class SearchInRotatedSortedArray {
 

@@ -17,6 +17,7 @@ package com.programming.practice.problems.string;
  * @see <a href = "https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class LongestCommonPrefix {
 

@@ -21,6 +21,7 @@ import java.util.List;
  * @see <a href = "https://leetcode.com/problems/reverse-integer/">Reverse Integer</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class ReverseInteger {
 
@@ -33,7 +34,7 @@ public final class ReverseInteger {
       return 0;
     }
 
-    List<Integer> digitList = new ArrayList<>();
+    final List<Integer> digitList = new ArrayList<>();
 
     int absoluteNumber = Math.abs(inputNumber);
 
@@ -45,7 +46,7 @@ public final class ReverseInteger {
     int reverseNumber = 0;
     int powerIndex = digitList.size() - 1;
 
-    for (int digit : digitList) {
+    for (final int digit : digitList) {
 
       final int temp = (int) (Math.pow(10, powerIndex--) * digit);
 

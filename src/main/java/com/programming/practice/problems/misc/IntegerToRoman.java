@@ -27,6 +27,7 @@ import java.util.Map;
  * @see <a href = "https://leetcode.com/problems/integer-to-roman/">Integer to Roman</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class IntegerToRoman {
 

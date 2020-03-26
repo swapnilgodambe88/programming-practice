@@ -14,6 +14,7 @@ import com.programming.practice.problems.linkedlist.util.ListNode;
  * @see <a href = "https://leetcode.com/problems/swap-nodes-in-pairs/">Swap Nodes in Pairs</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company eBay
  */
 public final class SwapNodesInPairs {
 
@@ -32,8 +33,8 @@ public final class SwapNodesInPairs {
 
     while (iter != null && iter.next != null && iter.next.next != null) {
 
-      ListNode oddNode = iter.next;
-      ListNode evenNode = oddNode.next;
+      final ListNode oddNode = iter.next;
+      final ListNode evenNode = oddNode.next;
 
       iter.next = evenNode;
       oddNode.next = evenNode.next;
