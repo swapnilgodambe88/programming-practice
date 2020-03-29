@@ -5,21 +5,21 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link ReverseNodesInLinkedList}.
+ * White box tests for {@link ReverseLinkedList}.
  *
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
 public final class ReverseNodesInLinkedListTest {
 
-  private final ReverseNodesInLinkedList obj = new ReverseNodesInLinkedList();
+  private final ReverseLinkedList obj = new ReverseLinkedList();
 
   @Test
   public void testEmptyLinkedList() {
     final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {});
 
     final ListNode expectedReverseListNode = ListNode.convertArrayToLinkedList(new int[] {});
-    Assert.assertEquals(expectedReverseListNode, obj.reverseNodes(l1));
+    Assert.assertEquals(expectedReverseListNode, obj.reverseList(l1));
   }
 
   @Test
@@ -27,7 +27,7 @@ public final class ReverseNodesInLinkedListTest {
     final ListNode l1 = ListNode.convertArrayToLinkedList(new int[] {1});
 
     final ListNode expectedReverseListNode = ListNode.convertArrayToLinkedList(new int[] {1});
-    Assert.assertEquals(expectedReverseListNode, obj.reverseNodes(l1));
+    Assert.assertEquals(expectedReverseListNode, obj.reverseList(l1));
   }
 
   @Test
@@ -36,7 +36,7 @@ public final class ReverseNodesInLinkedListTest {
 
     final ListNode expectedReverseListNode =
         ListNode.convertArrayToLinkedList(new int[] {5, 4, 3, 2, 1});
-    Assert.assertEquals(expectedReverseListNode, obj.reverseNodes(l1));
+    Assert.assertEquals(expectedReverseListNode, obj.reverseList(l1));
   }
 
   @Test
@@ -45,7 +45,7 @@ public final class ReverseNodesInLinkedListTest {
 
     final ListNode expectedReverseListNode =
         ListNode.convertArrayToLinkedList(new int[] {1, 2, 3, 4, 5});
-    Assert.assertEquals(expectedReverseListNode, obj.reverseNodes(l1));
+    Assert.assertEquals(expectedReverseListNode, obj.reverseList(l1));
   }
 
   @Test
@@ -54,6 +54,6 @@ public final class ReverseNodesInLinkedListTest {
 
     final ListNode expectedReverseListNode =
         ListNode.convertArrayToLinkedList(new int[] {1, 1, 1, 1});
-    Assert.assertEquals(expectedReverseListNode, obj.reverseNodes(l1));
+    Assert.assertEquals(expectedReverseListNode, obj.reverseList(l1));
   }
 }
