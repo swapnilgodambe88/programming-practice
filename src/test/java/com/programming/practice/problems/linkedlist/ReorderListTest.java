@@ -1,14 +1,14 @@
 package com.programming.practice.problems.linkedlist;
 
+import com.programming.practice.problems.linkedlist.util.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
-import com.programming.practice.problems.linkedlist.util.ListNode;
 
 /**
  * White box tests for {@link ReorderList}.
  *
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class ReorderListTest {
 

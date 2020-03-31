@@ -25,7 +25,7 @@ import com.programming.practice.problems.binarytree.util.TreeNode;
  *     Copyright 2020.
  * @company eBay
  */
-public final class LowestCommonAncentorOfBinaryTree {
+public final class LowestCommonAncestorOfBinaryTree {
 
   /**
    * Finds the lowest common ancestor (LCA) of the two given nodes in the tree.

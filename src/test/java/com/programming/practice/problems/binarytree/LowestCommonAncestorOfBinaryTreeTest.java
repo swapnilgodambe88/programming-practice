@@ -7,14 +7,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White test for {@link LowestCommonAncentorOfBinaryTree}.
+ * White test for {@link LowestCommonAncestorOfBinaryTree}.
  *
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class LowestCommonAncentorOfBinaryTreeTest {
+public final class LowestCommonAncestorOfBinaryTreeTest {
 
-  private final LowestCommonAncentorOfBinaryTree obj = new LowestCommonAncentorOfBinaryTree();
+  private final LowestCommonAncestorOfBinaryTree obj = new LowestCommonAncestorOfBinaryTree();
   private final BinaryTree tree = new BinaryTree();
 
   @Test

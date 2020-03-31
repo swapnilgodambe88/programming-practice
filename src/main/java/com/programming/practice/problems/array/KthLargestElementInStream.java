@@ -31,9 +31,7 @@ import java.util.PriorityQueue;
  */
 public final class KthLargestElementInStream {
 
-  /**
-   * Stores the kth largest elements at any given time.
-   */
+  /** Stores the kth largest elements at any given time. */
   private int kthLargestElement;
 
   /**
@@ -49,9 +47,10 @@ public final class KthLargestElementInStream {
    * @param nums The nums array.
    */
   public KthLargestElementInStream(final int k, final int[] nums) {
-    final Comparator<Integer> ascendingComparator = (a, b) -> {
-      return a - b;
-    };
+    final Comparator<Integer> ascendingComparator =
+        (a, b) -> {
+          return a - b;
+        };
 
     elementsGreaterThanKthLargestElement = new PriorityQueue<>(ascendingComparator);
 
