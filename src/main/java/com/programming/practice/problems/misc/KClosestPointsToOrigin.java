@@ -9,11 +9,9 @@ import java.util.List;
 /**
  * We have a list of points on the plane. Find the K closest points to the origin (0, 0).
  *
- * <p>
- * (Here, the distance between two points on a plane is the Euclidean distance.)
+ * <p>(Here, the distance between two points on a plane is the Euclidean distance.)
  *
- * <p>
- * You may return the answer in any order. The answer is guaranteed to be unique (except for the
+ * <p>You may return the answer in any order. The answer is guaranteed to be unique (except for the
  * order that it is in.)
  *
  * <pre>
@@ -34,9 +32,9 @@ import java.util.List;
  * </pre>
  *
  * @see <a href = "https://leetcode.com/problems/k-closest-points-to-origin/">K Closest Points to
- *      Origin</a>
+ *     Origin</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  * @company eBay
  */
 public final class KClosestPointsToOrigin {
@@ -74,19 +72,19 @@ public final class KClosestPointsToOrigin {
           return (int) (point1.distanceToOriginSquare - point2.distanceToOriginSquare);
         };
 
-        Collections.sort(pointList, pointComparator);
+    Collections.sort(pointList, pointComparator);
 
-        final int[][] result = new int[K][2];
-        int count = 0;
+    final int[][] result = new int[K][2];
+    int count = 0;
 
-        final Iterator<Point> iterator = pointList.iterator();
-        while (count < K) {
-          final Point point = iterator.next();
-          result[count][0] = point.x;
-          result[count][1] = point.y;
-          ++count;
-        }
+    final Iterator<Point> iterator = pointList.iterator();
+    while (count < K) {
+      final Point point = iterator.next();
+      result[count][0] = point.x;
+      result[count][1] = point.y;
+      ++count;
+    }
 
-        return result;
+    return result;
   }
 }
