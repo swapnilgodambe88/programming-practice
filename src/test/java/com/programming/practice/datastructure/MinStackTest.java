@@ -7,11 +7,9 @@ import org.junit.Test;
  * White box tests for {@link MinStack}.
  *
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class MinStackTest {
-
-
 
   @Test
   public void testScenario1() {

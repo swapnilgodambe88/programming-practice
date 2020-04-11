@@ -60,7 +60,7 @@ public final class GroupAnagrams {
     for (final char character : inputStr.toCharArray()) {
       asciiValue = character;
       // Random function to generate a hash
-      hashCode += Math.pow(asciiValue, 3) + Math.pow(asciiValue, 2) + 1;
+      hashCode += Math.pow(asciiValue, 4) + Math.pow(asciiValue, 3) + Math.pow(asciiValue, 2) + 1;
     }
 
     return hashCode;

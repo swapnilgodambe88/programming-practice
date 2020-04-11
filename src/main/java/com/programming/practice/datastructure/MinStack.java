@@ -5,38 +5,34 @@ import java.util.Stack;
 /**
  * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
  *
- * push(x) -- Push element x onto stack.<br>
+ * <p>push(x) -- Push element x onto stack.<br>
  * pop() -- Removes the element on top of the stack.<br>
  * top() -- Get the top element.<br>
  * getMin() -- Retrieve the minimum element in the stack.<br>
  *
  * <pre>
-Example:
-
-MinStack minStack = new MinStack();
-minStack.push(-2);
-minStack.push(0);
-minStack.push(-3);
-minStack.getMin();   --> Returns -3.
-minStack.pop();
-minStack.top();      --> Returns 0.
-minStack.getMin();   --> Returns -2.
+ * Example:
+ *
+ * MinStack minStack = new MinStack();
+ * minStack.push(-2);
+ * minStack.push(0);
+ * minStack.push(-3);
+ * minStack.getMin();   --> Returns -3.
+ * minStack.pop();
+ * minStack.top();      --> Returns 0.
+ * minStack.getMin();   --> Returns -2.
  * </pre>
  *
  * @see <a href = "https://leetcode.com/problems/min-stack/">Min Stack</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class MinStack {
 
-  /**
-   * A stack to maintain the order of elements inserted and also the minimum at every insert.
-   */
+  /** A stack to maintain the order of elements inserted and also the minimum at every insert. */
   private final Stack<int[]> stack;
 
-  /**
-   * Public constructor for {@link MinStack}.
-   */
+  /** Public constructor for {@link MinStack}. */
   public MinStack() {
     this.stack = new Stack<>();
   }
@@ -64,16 +60,12 @@ public final class MinStack {
     stack.pop();
   }
 
-  /**
-   * @return The element at the top of the stack without removing it.
-   */
+  /** @return The element at the top of the stack without removing it. */
   public int top() {
     return stack.peek()[0];
   }
 
-  /**
-   * @return The minimum element on the stack in O(1) runtime complexity.
-   */
+  /** @return The minimum element on the stack in O(1) runtime complexity. */
   public int getMin() {
     return stack.peek()[1];
   }

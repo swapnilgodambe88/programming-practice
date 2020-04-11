@@ -6,43 +6,39 @@ package com.programming.practice.problems.array;
  * you. You may only access the array using an ArrayReader interface, where ArrayReader.get(k)
  * returns the element of the array at index k (0-indexed).
  *
- * You may assume all integers in the array are less than 10000, and if you access the array out of
- * bounds, ArrayReader.get will return 2147483647.
- *
+ * <p>You may assume all integers in the array are less than 10000, and if you access the array out
+ * of bounds, ArrayReader.get will return 2147483647.
  *
  * <pre>
-Example 1:
-
-Input: array = [-1,0,3,5,9,12], target = 9
-Output: 4
-Explanation: 9 exists in nums and its index is 4
-
-Example 2:
-
-Input: array = [-1,0,3,5,9,12], target = 2
-Output: -1
-Explanation: 2 does not exist in nums so return -1
+ * Example 1:
+ *
+ * Input: array = [-1,0,3,5,9,12], target = 9
+ * Output: 4
+ * Explanation: 9 exists in nums and its index is 4
+ *
+ * Example 2:
+ *
+ * Input: array = [-1,0,3,5,9,12], target = 2
+ * Output: -1
+ * Explanation: 2 does not exist in nums so return -1
  * </pre>
  *
  * @see <a href = "https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/">Search
- *      in a Sorted Array of Unknown Size</a>
+ *     in a Sorted Array of Unknown Size</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class SearchInSortedArrayOfUnknownSize {
 
-  public final static int ARRAY_READER_OUT_OF_BOUND = 2147483647;
+  public static final int ARRAY_READER_OUT_OF_BOUND = 2147483647;
 
-  /**
-   * The Array reader's API interface.
-   *
-   */
+  /** The Array reader's API interface. */
   interface ArrayReader {
 
     /**
      * @param index The index of the element to be returned.
-     * @return The element present on the index. If the index is out of bound then returns
-     *         {@link SearchInSortedArrayOfUnknownSize#ARRAY_READER_OUT_OF_BOUND}.
+     * @return The element present on the index. If the index is out of bound then returns {@link
+     *     SearchInSortedArrayOfUnknownSize#ARRAY_READER_OUT_OF_BOUND}.
      */
     public int get(int index);
   }
@@ -95,8 +91,8 @@ public final class SearchInSortedArrayOfUnknownSize {
    * @param end The end index of the array.
    * @return The index of the element if found. Otherwise returns -1.
    */
-  private static int BinarySearch(final ArrayReader reader, final int target, final int start,
-      final int end) {
+  private static int BinarySearch(
+      final ArrayReader reader, final int target, final int start, final int end) {
 
     int tempStart = start, tempEnd = end;
 
@@ -115,6 +111,5 @@ public final class SearchInSortedArrayOfUnknownSize {
     }
 
     return -1;
-
   }
 }

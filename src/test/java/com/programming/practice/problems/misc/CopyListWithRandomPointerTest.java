@@ -7,7 +7,7 @@ import org.junit.Test;
  * White box tests for {@link CopyListWithRandomPointer}.
  *
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class CopyListWithRandomPointerTest {
 
@@ -35,6 +35,5 @@ public final class CopyListWithRandomPointerTest {
     Assert.assertEquals(7, copyNode1.val);
     Assert.assertEquals(13, copyNode1.next.val);
     Assert.assertNull(copyNode1.random);
-
   }
 }

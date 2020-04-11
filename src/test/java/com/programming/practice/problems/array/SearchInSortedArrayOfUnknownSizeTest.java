@@ -8,13 +8,11 @@ import org.junit.Test;
  * White box tests for {@link SearchInSortedArrayOfUnknownSize}.
  *
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class SearchInSortedArrayOfUnknownSizeTest {
 
-  /**
-   * Implementation for {@link SearchInSortedArrayOfUnknownSize.ArrayReader}.
-   */
+  /** Implementation for {@link SearchInSortedArrayOfUnknownSize.ArrayReader}. */
   public class ArrayReaderImplementation implements SearchInSortedArrayOfUnknownSize.ArrayReader {
 
     private final int[] array;
@@ -41,7 +39,6 @@ public final class SearchInSortedArrayOfUnknownSizeTest {
     public String toString() {
       return Arrays.toString(array);
     }
-
   }
 
   private final SearchInSortedArrayOfUnknownSize obj = new SearchInSortedArrayOfUnknownSize();
@@ -93,5 +90,4 @@ public final class SearchInSortedArrayOfUnknownSizeTest {
 
     Assert.assertEquals(-1, obj.search(reader, 6));
   }
-
 }

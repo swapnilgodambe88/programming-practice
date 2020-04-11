@@ -1,9 +1,7 @@
 package com.programming.practice.problems.misc;
 
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Queue;
 
 /**
@@ -46,9 +44,9 @@ public final class SerializeAndDeserializeNArayTree {
     }
   }
 
-  private static final String DASH = "-";
-  private static final String DOLLAR = "$";
-  private static final String SEPARATOR = "|";
+  private static final String PARENT_CHILDREN_SEPERATOR = "#";
+  private static final String SIBLING_SEPERATOR = "$";
+  private static final String NODE_SEPARATOR = "|";
 
   /**
    * Serializes the tree to string.
@@ -61,7 +59,8 @@ public final class SerializeAndDeserializeNArayTree {
       return "";
     }
 
-    final Map<Integer, List<Integer>> treeMap = new LinkedHashMap<>();
+    // final Map<Integer, List<Integer>> treeMap = new LinkedHashMap<>();
+    final List<Node> bfsNodeList = new LinkedList<>();
     final Queue<Node> queue = new LinkedList<>();
 
     queue.add(root);
@@ -69,17 +68,14 @@ public final class SerializeAndDeserializeNArayTree {
     while (!queue.isEmpty()) {
       final Node poppedNode = queue.remove();
 
-      treeMap.put(poppedNode.val, convertListOfNodesToListOfIntegers(poppedNode.children));
+      bfsNodeList.add(poppedNode);
 
       for (final Node child : poppedNode.children) {
         queue.add(child);
       }
     }
 
-    System.out.println("treeMap: " + treeMap);
-
-    final String serializedString = convertMapToString(treeMap);
-    System.out.println("serializedString: " + serializedString);
+    final String serializedString = convertBfsNodeListToString(bfsNodeList);
     return serializedString;
   }
 
@@ -89,80 +85,54 @@ public final class SerializeAndDeserializeNArayTree {
       return null;
     }
 
-    final Map<Integer, List<Integer>> deserializedMap = convertStringToMap(data);
-    final Map<Integer, Node> treeMapping = new LinkedHashMap<>();
+    final List<Node> bsfNodeList = convertStringToBfsNodeList(data);
 
-    for (final int nodeValue : deserializedMap.keySet()) {
-      treeMapping.put(nodeValue, new Node(nodeValue, new LinkedList<>()));
-    }
-
-    for (final Map.Entry<Integer, List<Integer>> mapEntry : deserializedMap.entrySet()) {
-      final int nodeValue = mapEntry.getKey();
-
-      final Node parentNode = treeMapping.get(nodeValue);
-
-      final List<Node> childrenNodes = new LinkedList<>();
-      for (final int child : mapEntry.getValue()) {
-        childrenNodes.add(treeMapping.get(child));
-      }
-
-      if (childrenNodes.size() > 0) {
-        parentNode.children = childrenNodes;
-      }
-    }
-
-    return treeMapping.values().iterator().next();
+    return bsfNodeList.get(0);
   }
 
-  private static List<Integer> convertListOfNodesToListOfIntegers(final List<Node> nodeList) {
-    final List<Integer> list = new LinkedList<>();
-
-    for (final Node node : nodeList) {
-      list.add(node.val);
-    }
-
-    return list;
-  }
-
-  private static String convertMapToString(final Map<Integer, List<Integer>> map) {
+  private static String convertBfsNodeListToString(final List<Node> bfsList) {
     final StringBuffer serializedString = new StringBuffer();
 
-    for (final Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
-      serializedString.append(entry.getKey());
-      serializedString.append(DASH);
+    for (final Node node : bfsList) {
+      serializedString.append(node.val);
+      serializedString.append(PARENT_CHILDREN_SEPERATOR);
 
-      for (final int child : entry.getValue()) {
-        serializedString.append(child);
-        serializedString.append(DOLLAR);
+      for (final Node child : node.children) {
+        serializedString.append(child.val);
+        serializedString.append(SIBLING_SEPERATOR);
       }
 
-      serializedString.append(SEPARATOR);
+      serializedString.append(NODE_SEPARATOR);
     }
 
     return serializedString.toString();
   }
 
-  private static Map<Integer, List<Integer>> convertStringToMap(final String string) {
-    final String[] mapEntries = string.split("\\" + SEPARATOR);
+  private List<Node> convertStringToBfsNodeList(final String string) {
+    final String[] nodes = string.split("\\" + NODE_SEPARATOR);
 
-    final Map<Integer, List<Integer>> map = new LinkedHashMap<>();
-    for (final String mapEntry : mapEntries) {
-      final String[] mapEntrySplit = mapEntry.split("\\" + DASH);
+    final List<Node> bfsNodeList = new LinkedList<>();
+    final Queue<Node> queue = new LinkedList<>();
+    final Node firstNode =
+        new Node(Integer.valueOf(nodes[0].split(PARENT_CHILDREN_SEPERATOR)[0]), new LinkedList<>());
+    queue.add(firstNode);
 
-      final int key = Integer.valueOf(mapEntrySplit[0]);
-
-      final List<Integer> children = new LinkedList<>();
+    for (final String node : nodes) {
+      final String[] mapEntrySplit = node.split("\\" + PARENT_CHILDREN_SEPERATOR);
+      final Node poppedNode = queue.remove();
 
       // Included condition to for nodes without any children
       if (mapEntrySplit.length > 1) {
-        for (final String child : mapEntrySplit[1].split("\\" + DOLLAR)) {
-          children.add(Integer.valueOf(child));
+        for (final String child : mapEntrySplit[1].split("\\" + SIBLING_SEPERATOR)) {
+          final Node childNode = new Node(Integer.valueOf(child), new LinkedList<>());
+          poppedNode.children.add(childNode);
+          queue.add(childNode);
         }
       }
 
-      map.put(key, children);
+      bfsNodeList.add(poppedNode);
     }
 
-    return map;
+    return bfsNodeList;
   }
 }

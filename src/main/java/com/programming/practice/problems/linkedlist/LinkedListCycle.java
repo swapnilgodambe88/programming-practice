@@ -19,31 +19,24 @@ public final class LinkedListCycle {
   /**
    * Determines if the linked list has a cycle or not.
    *
+   * <p><b>Using Floyd's Tortoise and hare algorithm</b>
+   *
    * @param head The head of the linked list.
    * @return True If the linked list has cycle. Otherwise false.
    */
   public boolean hasCycle(final ListNode head) {
-    if (head == null) {
-      return false;
-    }
 
-    ListNode oneJumpNode = head;
-    ListNode twoJumpNode = head.next;
+    ListNode tortoise = head;
+    ListNode hare = head;
 
-    while (oneJumpNode != null && twoJumpNode != null) {
-      if (oneJumpNode.val == twoJumpNode.val) {
+    // Since hare is the fast pointer, this would be the one reaching null (if loop doesn't exists).
+    // Therefore no condition required for tortoise
+    while (hare != null && hare.next != null) {
+      tortoise = tortoise.next;
+      hare = hare.next.next;
+
+      if (tortoise == hare) {
         return true;
-      }
-
-      oneJumpNode = oneJumpNode.next;
-
-      if (twoJumpNode.next != null) {
-        twoJumpNode = twoJumpNode.next.next;
-      } else {
-
-        // This condition will only be executed if list doesn't contain cycle & twoJumpNode is at
-        // last node
-        twoJumpNode = twoJumpNode.next;
       }
     }
 

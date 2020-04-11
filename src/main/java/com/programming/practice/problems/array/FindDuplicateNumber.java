@@ -72,6 +72,8 @@ public final class FindDuplicateNumber {
    * (inclusive), prove that at least one duplicate number must exist. Assume that there is only one
    * duplicate number, find the duplicate one.
    *
+   * <p><b>Solution dependent on Floy's Tortoise and hare algorithm</b>
+   *
    * @param nums The array.
    * @return The duplicate number
    */

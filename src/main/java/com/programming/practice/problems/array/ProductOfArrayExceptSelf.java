@@ -4,14 +4,14 @@ package com.programming.practice.problems.array;
  * Given an array nums of n integers where n > 1, return an array output such that output[i] is
  * equal to the product of all the elements of nums except nums[i].
  *
- * Example:
+ * <p>Example:
  *
- * Input: [1,2,3,4] Output: [24,12,8,6]
+ * <p>Input: [1,2,3,4] Output: [24,12,8,6]
  *
  * @see <a href = "https://leetcode.com/problems/product-of-array-except-self/">Product of Array
- *      Except Self</a>
+ *     Except Self</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  * @company eBay
  */
 public final class ProductOfArrayExceptSelf {

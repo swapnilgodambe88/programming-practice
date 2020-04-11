@@ -17,11 +17,11 @@ public final class NumberOfIslandsTest {
   public void testScenario1() {
     final char[][] grid =
         new char[][] {
-      {'1', '1', '1', '1', '0'},
-      {'1', '1', '0', '1', '0'},
-      {'1', '1', '0', '0', '0'},
-      {'0', '0', '0', '0', '0'}
-    };
+          {'1', '1', '1', '1', '0'},
+          {'1', '1', '0', '1', '0'},
+          {'1', '1', '0', '0', '0'},
+          {'0', '0', '0', '0', '0'}
+        };
 
     Assert.assertEquals(1, obj.numIslands(grid));
   }
@@ -31,7 +31,7 @@ public final class NumberOfIslandsTest {
     final char[][] grid =
         new char[][] {{'1', '1', '1'}, {'1', '1', '1'}, {'1', '1', '1'}, {'1', '1', '1'}};
 
-        Assert.assertEquals(1, obj.numIslands(grid));
+    Assert.assertEquals(1, obj.numIslands(grid));
   }
 
   @Test
@@ -39,7 +39,7 @@ public final class NumberOfIslandsTest {
     final char[][] grid =
         new char[][] {{'0', '0', '0'}, {'0', '0', '0'}, {'0', '0', '0'}, {'0', '0', '0'}};
 
-        Assert.assertEquals(0, obj.numIslands(grid));
+    Assert.assertEquals(0, obj.numIslands(grid));
   }
 
   @Test

@@ -7,27 +7,25 @@ import java.util.Map;
  * A linked list is given such that each node contains an additional random pointer which could
  * point to any node in the list or null.
  *
- * Return a deep copy of the list.
+ * <p>Return a deep copy of the list.
  *
- * The Linked List is represented in the input/output as a list of n nodes. Each node is represented
- * as a pair of [val, random_index] where:
+ * <p>The Linked List is represented in the input/output as a list of n nodes. Each node is
+ * represented as a pair of [val, random_index] where:
  *
  * <ul>
- * <li>val: an integer representing Node.val</li>
- * <li>random_index: the index of the node (range from 0 to n-1) where random pointer points to, or
- * null if it does not point to any node.</li>
+ *   <li>val: an integer representing Node.val
+ *   <li>random_index: the index of the node (range from 0 to n-1) where random pointer points to,
+ *       or null if it does not point to any node.
  * </ul>
  *
  * @see <a href = "">Copy list with Random Pointer</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  * @company eBay
  */
 public final class CopyListWithRandomPointer {
 
-  /**
-   * A node representation.
-   */
+  /** A node representation. */
   public class Node {
     int val;
     Node next;
@@ -42,9 +40,7 @@ public final class CopyListWithRandomPointer {
 
   private final Map<Node, Node> map;
 
-  /**
-   * Constructor for {@link CopyListWithRandomPointer}
-   */
+  /** Constructor for {@link CopyListWithRandomPointer} */
   public CopyListWithRandomPointer() {
     this.map = new HashMap<>();
   }
