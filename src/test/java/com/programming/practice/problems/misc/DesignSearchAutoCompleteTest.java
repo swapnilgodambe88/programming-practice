@@ -9,7 +9,7 @@ import org.junit.Test;
  * White box tests for {@link DesignSearchAutoComplete}.
  *
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  */
 public final class DesignSearchAutoCompleteTest {
 
@@ -20,8 +20,7 @@ public final class DesignSearchAutoCompleteTest {
 
     final DesignSearchAutoComplete obj = new DesignSearchAutoComplete(sentences, times);
 
-    List<String> expectedAutoComplete =
-        Arrays.asList("i love you", "island", "i love leetcode");
+    List<String> expectedAutoComplete = Arrays.asList("i love you", "island", "i love leetcode");
     Assert.assertEquals(expectedAutoComplete, obj.input('i'));
 
     expectedAutoComplete = Arrays.asList("i love you", "i love leetcode");
@@ -33,8 +32,7 @@ public final class DesignSearchAutoCompleteTest {
     expectedAutoComplete = Arrays.asList();
     Assert.assertEquals(expectedAutoComplete, obj.input('#'));
 
-    expectedAutoComplete =
-        Arrays.asList("i love you", "island", "i love leetcode");
+    expectedAutoComplete = Arrays.asList("i love you", "island", "i love leetcode");
     Assert.assertEquals(expectedAutoComplete, obj.input('i'));
 
     expectedAutoComplete = Arrays.asList("i love you", "i love leetcode", "i a");
@@ -57,8 +55,5 @@ public final class DesignSearchAutoCompleteTest {
 
     expectedAutoComplete = Arrays.asList();
     Assert.assertEquals(expectedAutoComplete, obj.input('#'));
-
-
-
   }
 }

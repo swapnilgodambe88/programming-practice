@@ -1,7 +1,7 @@
 package com.programming.practice.problems.misc;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.programming.practice.datastructure.TrieNode;
+import java.util.Objects;
 
 /**
  * Implement a trie with insert, search, and startsWith methods.
@@ -27,19 +27,7 @@ import java.util.Map;
  */
 public final class ImplementTrie {
 
-  private static final char START = 'a';
-
-  class TrieNode {
-    public final char value;
-    public final Map<Character, TrieNode> children;
-    public boolean endOfWord;
-
-    public TrieNode(final char value) {
-      this.value = value;
-      this.children = new HashMap<>();
-      this.endOfWord = false;
-    }
-  }
+  private static final char START = '-';
 
   private final TrieNode root;
 
@@ -48,29 +36,39 @@ public final class ImplementTrie {
     this.root = new TrieNode(START);
   }
 
-  /** Inserts a word into the trie. */
+  /**
+   * Inserts a word into the trie.
+   *
+   * @param word The word to insert.
+   */
   public void insert(final String word) {
 
     TrieNode curNode = root;
+
     for (final char character : word.toCharArray()) {
-      if (!curNode.children.containsKey(character)) {
-        final TrieNode node = new TrieNode(character);
-        curNode.children.put(character, node);
+      if (Objects.isNull(curNode.children[character - 'a'])) {
+        curNode.children[character - 'a'] = new TrieNode(character);
       }
 
-      curNode = curNode.children.get(character);
+      curNode = curNode.children[character - 'a'];
     }
 
     curNode.endOfWord = true;
   }
 
-  /** Returns if the word is in the trie. */
+  /**
+   * Evaluates if the trie contains the word or not.
+   *
+   * @param word The word to search.
+   * @return True If the word is present in trie. False, otherwise.
+   */
   public boolean search(final String word) {
 
     TrieNode curNode = root;
+
     for (final char character : word.toCharArray()) {
-      if (curNode.children.containsKey(character)) {
-        curNode = curNode.children.get(character);
+      if (!Objects.isNull(curNode.children[character - 'a'])) {
+        curNode = curNode.children[character - 'a'];
       } else {
         return false;
       }
@@ -79,13 +77,19 @@ public final class ImplementTrie {
     return curNode.endOfWord;
   }
 
-  /** Returns if there is any word in the trie that starts with the given prefix. */
+  /**
+   * Returns if there is any word in the trie that starts with the given prefix.
+   *
+   * @param prefix The prefix to search in trie.
+   * @return True If there exists any word in trie with the given prefix. False, otherwise.
+   */
   public boolean startsWith(final String prefix) {
 
     TrieNode curNode = root;
+
     for (final char character : prefix.toCharArray()) {
-      if (curNode.children.containsKey(character)) {
-        curNode = curNode.children.get(character);
+      if (!Objects.isNull(curNode.children[character - 'a'])) {
+        curNode = curNode.children[character - 'a'];
       } else {
         return false;
       }
