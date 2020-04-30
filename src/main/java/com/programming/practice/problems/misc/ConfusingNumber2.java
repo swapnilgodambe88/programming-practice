@@ -1,11 +1,5 @@
 package com.programming.practice.problems.misc;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * We can rotate digits by 180 degrees to form new digits. When 0, 1, 6, 8, 9 are rotated 180
  * degrees, they become 0, 1, 9, 8, 6 respectively. When 2, 3, 4, 5 and 7 are rotated 180 degrees,
@@ -45,19 +39,6 @@ import java.util.Map;
  */
 public final class ConfusingNumber2 {
 
-  private final Map<Integer, Integer> mirrorMap;
-
-  /** Constructor for {@link ConfusingNumber2}. */
-  public ConfusingNumber2() {
-    this.mirrorMap = new HashMap<>();
-
-    mirrorMap.put(0, 0);
-    mirrorMap.put(1, 1);
-    mirrorMap.put(6, 9);
-    mirrorMap.put(8, 8);
-    mirrorMap.put(9, 6);
-  }
-
   /**
    * Return the number of confusing numbers between 1 and N inclusive.
    *
@@ -66,51 +47,14 @@ public final class ConfusingNumber2 {
    */
   public int confusingNumberII(final int N) {
     int count = 0;
+    final ConfusingNumber obj = new ConfusingNumber();
+
     for (int number = 6; number <= N; ++number) {
-      if (isNumberConfusing(number)) {
+      if (obj.confusingNumber(number)) {
         count++;
       }
     }
 
     return count;
-  }
-
-  /**
-   * @param number The number to evaluate if it is confusing.
-   * @return True If the number is confusing. Otherwise, false.
-   */
-  private boolean isNumberConfusing(final int number) {
-    final List<Integer> digits = convertNumberToListOfDigits(number);
-    final List<Integer> mirrorNumber = new ArrayList<>();
-
-    for (final int digit : digits) {
-      if (mirrorMap.containsKey(digit)) {
-        mirrorNumber.add(mirrorMap.get(digit));
-      } else {
-        return false;
-      }
-    }
-
-    Collections.reverse(mirrorNumber);
-    return !digits.equals(mirrorNumber);
-  }
-
-  /**
-   * Converts a number to list of digits. e.g. 899 -> [8, 9, 9].
-   *
-   * @param number The number to convert.
-   * @return The list of digits representing the number
-   */
-  private static List<Integer> convertNumberToListOfDigits(final int number) {
-    final List<Integer> digits = new ArrayList<>();
-
-    int divident = number;
-    while (divident > 0) {
-      digits.add(divident % 10);
-      divident = Math.floorDiv(divident, 10);
-    }
-
-    Collections.reverse(digits);
-    return digits;
   }
 }

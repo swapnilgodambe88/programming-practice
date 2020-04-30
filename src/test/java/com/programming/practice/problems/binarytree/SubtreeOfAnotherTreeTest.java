@@ -28,7 +28,6 @@ public final class SubtreeOfAnotherTreeTest {
   @Test
   public void testScenario2() {
     final TreeNode s = tree.createBinaryTree(Arrays.asList(3, 4, 5, 1, 2, null, null, 0));
-    final TreeNode t = tree.createBinaryTree(Arrays.asList(4, 1, 2));
 
     Assert.assertTrue(obj.isSubtree(s, s));
   }

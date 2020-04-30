@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
  */
-public final class ReverseNodesInLinkedListTest {
+public final class ReverseLinkedListTest {
 
   private final ReverseLinkedList obj = new ReverseLinkedList();
 
