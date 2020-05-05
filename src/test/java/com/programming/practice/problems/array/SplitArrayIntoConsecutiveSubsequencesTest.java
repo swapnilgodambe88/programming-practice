@@ -1,5 +1,6 @@
 package com.programming.practice.problems.array;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -16,7 +17,21 @@ public final class SplitArrayIntoConsecutiveSubsequencesTest {
   @Test
   public void testScenario1() {
     final int[] nums = new int[] {1, 2, 3, 4, 4, 5};
-    obj.isPossible(nums);
-    // Assert.assertTrue(obj.isPossible(nums));
+
+    Assert.assertFalse(obj.isPossible(nums));
+  }
+
+  @Test
+  public void testScenario2() {
+    final int[] nums = new int[] {1, 2, 3, 3, 4, 5};
+
+    Assert.assertTrue(obj.isPossible(nums));
+  }
+
+  @Test
+  public void testScenario3() {
+    final int[] nums = new int[] {1, 2, 3, 3, 4, 4, 5, 5};
+
+    Assert.assertTrue(obj.isPossible(nums));
   }
 }
