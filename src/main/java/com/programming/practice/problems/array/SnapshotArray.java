@@ -7,13 +7,13 @@ import java.util.TreeMap;
  * Implement a SnapshotArray that supports the following interface:
  *
  * <ul>
- * <li>SnapshotArray(int length) initializes an array-like data structure with the given length.
- * Initially, each element equals 0.
- * <li>void set(index, val) sets the element at the given index to be equal to val.
- * <li>int snap() takes a snapshot of the array and returns the snap_id: the total number of times
- * we called snap() minus 1.
- * <li>int get(index, snap_id) returns the value at the given index, at the time we took the
- * snapshot with the given snap_id
+ *   <li>SnapshotArray(int length) initializes an array-like data structure with the given length.
+ *       Initially, each element equals 0.
+ *   <li>void set(index, val) sets the element at the given index to be equal to val.
+ *   <li>int snap() takes a snapshot of the array and returns the snap_id: the total number of times
+ *       we called snap() minus 1.
+ *   <li>int get(index, snap_id) returns the value at the given index, at the time we took the
+ *       snapshot with the given snap_id
  * </ul>
  *
  * <pre>
@@ -32,7 +32,7 @@ import java.util.TreeMap;
  *
  * @see <a href = "https://leetcode.com/problems/snapshot-array/">Snapshot Array</a>
  * @author Swapnil Godambe.<br>
- *         Copyright 2020.
+ *     Copyright 2020.
  * @company Google
  */
 public final class SnapshotArray {
