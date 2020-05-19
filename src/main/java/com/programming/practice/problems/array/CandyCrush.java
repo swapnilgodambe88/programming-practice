@@ -38,6 +38,7 @@ package com.programming.practice.problems.array;
  * @see <a href = "https://leetcode.com/problems/candy-crush/">Candy Crush</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company Google
  */
 public final class CandyCrush {
 

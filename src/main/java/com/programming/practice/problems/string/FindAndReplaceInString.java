@@ -43,6 +43,7 @@ import java.util.Arrays;
  *     String</a>
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.
+ * @company Google
  */
 public final class FindAndReplaceInString {
 
