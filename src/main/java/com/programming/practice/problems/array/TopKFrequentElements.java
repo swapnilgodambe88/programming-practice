@@ -32,7 +32,7 @@ public final class TopKFrequentElements {
    * @param k The integer k.
    * @return The k most frequent elements.
    */
-  public List<Integer> topKFrequent(final int[] nums, final int k) {
+  public int[] topKFrequent(final int[] nums, final int k) {
     final Map<Integer, Integer> map = new HashMap<>();
 
     for (final int number : nums) {
@@ -48,11 +48,11 @@ public final class TopKFrequentElements {
     final List<Map.Entry<Integer, Integer>> mapEntries = new ArrayList<>(map.entrySet());
     Collections.sort(mapEntries, frequencyComparator);
 
-    final List<Integer> topKFrequent = new ArrayList<>();
+    final int[] topKFrequentWords = new int[k];
     for (int i = 0; i < k; ++i) {
-      topKFrequent.add(mapEntries.get(i).getKey());
+      topKFrequentWords[i] = mapEntries.get(i).getKey();
     }
 
-    return topKFrequent;
+    return topKFrequentWords;
   }
 }
