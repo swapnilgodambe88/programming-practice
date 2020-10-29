@@ -14,6 +14,7 @@
     <packaging>jar</packaging>
 
     <name>programming-practice</name>
+    <description>Solutions to programming questions</description>
     <url>https://github.com/swapnilgodambe88/programming-practice</url>
 
     <properties>
