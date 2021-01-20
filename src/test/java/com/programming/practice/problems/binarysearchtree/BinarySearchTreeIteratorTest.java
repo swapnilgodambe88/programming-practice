@@ -1,13 +1,13 @@
-package com.programming.practice.problems.binarytree;
+package com.programming.practice.problems.binarysearchtree;
 
 import com.programming.practice.datastructure.BinarySearchTree;
-import com.programming.practice.problems.binarysearchtree.BinarySearchTreeIterator;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * White box tests for {@link BinarySearchTreeIterator}.
+ * White box tests for {@link
+ * com.programming.practice.problems.binarysearchtree.BinarySearchTreeIterator}.
  *
  * @author Swapnil Godambe.<br>
  *     Copyright 2020.

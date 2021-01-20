@@ -1,0 +1,63 @@
+package com.programming.practice.problems.misc;
+
+/**
+ * Implement pow(x, n), which calculates x raised to the power n (i.e. xn).
+ *
+ * <pre>
+ * Example 1:
+ *
+ * Input: x = 2.00000, n = 10
+ * Output: 1024.00000
+ * Example 2:
+ *
+ * Input: x = 2.10000, n = 3
+ * Output: 9.26100
+ * Example 3:
+ *
+ * Input: x = 2.00000, n = -2
+ * Output: 0.25000
+ * Explanation: 2-2 = 1/22 = 1/4 = 0.25
+ * </pre>
+ *
+ * @author Swapnil Godambe.<br>
+ *     Copyright 2020.
+ * @see <a href = "https://leetcode.com/problems/powx-n/">Pow(x, n)</a>
+ */
+public final class Pow {
+
+  /**
+   * Calculates x raised to the power n
+   *
+   * @param x The x number.
+   * @param n The n number.
+   * @return x raised to the power n.
+   */
+  public double myPow(double x, int n) {
+
+    if (n >= 0) {
+      return fastPower(x, n);
+    } else {
+      return fastPower(1 / x, -n);
+    }
+  }
+
+  /**
+   * Fast power Function.
+   *
+   * @param x The x number.
+   * @param n The n number.
+   * @return x raised to the power n.
+   */
+  private double fastPower(final double x, final int n) {
+    if (n == 0) {
+      return 1;
+    }
+
+    final double halfSquare = fastPower(x, n / 2);
+    if (n % 2 == 0) {
+      return halfSquare * halfSquare;
+    } else {
+      return halfSquare * halfSquare * x;
+    }
+  }
+}
