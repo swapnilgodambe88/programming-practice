@@ -36,4 +36,20 @@ public final class ProductOfArrayExceptSelfTest {
 
     Assert.assertArrayEquals(expectedResult, obj.productExceptSelf(nums));
   }
+
+  @Test
+  public void testAllZeros() {
+    final int[] nums = new int[] {0, 0};
+    final int[] expectedResult = new int[] {0, 0};
+
+    Assert.assertArrayEquals(expectedResult, obj.productExceptSelf(nums));
+  }
+
+  @Test
+  public void testOneZero() {
+    final int[] nums = new int[] {1, 0};
+    final int[] expectedResult = new int[] {0, 1};
+
+    Assert.assertArrayEquals(expectedResult, obj.productExceptSelf(nums));
+  }
 }

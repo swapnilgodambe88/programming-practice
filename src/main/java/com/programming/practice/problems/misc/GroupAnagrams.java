@@ -1,4 +1,3 @@
-/** */
 package com.programming.practice.problems.misc;
 
 import java.util.Arrays;

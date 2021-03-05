@@ -60,6 +60,7 @@ public final class MaximumSwap {
 
   /**
    * Converts a list of digits back to a number e.g. {1, 7, 3, 4} -> 1734
+   *
    * @param digits A list representing the digits.
    * @return The integer representation of the number.
    */
@@ -74,6 +75,7 @@ public final class MaximumSwap {
 
   /**
    * Converts a number to a list of digits e.g. 1734 -> {1, 7, 3, 4}.
+   *
    * @param number The number to convert.
    * @return A list representing the digits on the number.
    */
