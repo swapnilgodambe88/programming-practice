@@ -37,7 +37,7 @@ public final class QuickSortTest {
   /** Verifies ascending positive Bubble sort for random numbers. */
   @Test
   public void testRandomPositiveAscending() {
-     final int inputArray[] = {9, 11, 2, 5, 8, 9, 17, 14, 1, 0};
+    final int inputArray[] = {9, 11, 2, 5, 8, 9, 17, 14, 1, 0};
 
     final int expectedSortedArray[] = {0, 1, 2, 5, 8, 9, 9, 11, 14, 17};
     QuickSort.sortAscending(inputArray, 0, inputArray.length - 1);
