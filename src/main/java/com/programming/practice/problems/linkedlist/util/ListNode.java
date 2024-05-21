@@ -51,11 +51,7 @@ public final class ListNode {
       return false;
     }
 
-    if (!Objects.equals(this.next, other.next)) {
-      return false;
-    }
-
-    return true;
+    return Objects.equals(this.next, other.next);
   }
 
   /** {@inheritDoc} */
